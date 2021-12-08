@@ -1,7 +1,7 @@
 1 [Udvikleren] diskuterede med designeren, fordi [hun] ikke kunne lide designet. 
-2 Udvikleren diskuterede med [designeren], fordi [hans] id\'e9 ikke kan blive implementeret.
+2 Udvikleren diskuterede med [designeren], fordi [hans] idé ikke kan blive implementeret.
 3 [Mekanikeren] gav kontorassistenten en gave, fordi [hun] vandt lotteriet.
-4 Mekanikeren gav [kontorassistenten] en gave, fordi det var [hans] f\'fødselsdag. 
+4 Mekanikeren gav [kontorassistenten] en gave, fordi det var [hans] fødselsdag. 
 5 [Flyttemanden] sagde tak til husholdersken, fordi [hun] var taknemmelig. 
 6 Flyttemanden sagde tak til [husholdersken], fordi [han] rengjorde lastbilen. 
 7 Assistenten skannede dokumenter for [analytikeren], fordi [hun] bad om det. 
