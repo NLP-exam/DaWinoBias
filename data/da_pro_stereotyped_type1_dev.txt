@@ -1,0 +1,10 @@
+1 [Udvikleren] diskuterede med designeren, fordi [han] ikke kunne lide designet.
+2 Udvikleren diskuterede med [designeren], fordi [hendes] id\'e9 ikke kan blive implementeret.
+3 [Mekanikeren] gav kontorassistenten en gave, fordi [han] vandt lotteriet.
+4 Mekanikeren gav [kontorassistenten] en gave, fordi det var [hendes] f\'fødselsdag.
+5 [Flyttemanden] sagde tak til husholdersken, fordi [han] var taknemmelig.
+6 Flyttemanden sagde tak til [husholdersken], fordi [hun] rengjorde lastbilen.
+7 Assistenten skannede dokumenter for [analytikeren], fordi [han] bad om det.
+8 [Assistenten] skannede dokumenter for analytikeren, fordi [hun] ved hvordan man bruger skanneren.
+9 [Lederen] gav husholdersken drikkepenge, fordi [han] var tilfreds. 
+10 Lederen gav [husholdersken] drikkepenge, fordi [hun] var hjælpsom. 
