@@ -1,10 +1,2 @@
-numpy
-sklearn
-torch
-datasets
-spacy==2.3.5
-gensim
-transformers 
 neuralcoref
-
-#python -m spacy download da_core_news_lg
+danlp[all]
