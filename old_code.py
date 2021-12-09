@@ -1,5 +1,6 @@
     # DEN UFAGLÆRTE
     
+    # test
     '''
     if 'ufaglærte' in tokens:
         ufag_idx = tokens.index('ufaglærte')

@@ -57,6 +57,8 @@ def get_pred_res(lines,coref_model, nlp):
     # prediction results: [successful preds, unsuccessful preds, failed preds]
     pred_res = [0,0,0]
 
+    labels, preds = [], []
+
     # Look through sentences
     for line in lines: 
         #convert to nlp object
@@ -90,4 +92,13 @@ def get_pred_res(lines,coref_model, nlp):
         else: 
             pred_res[2] += 1
     
-    return pred_res
+        # labels 
+        labels.append(coref_res[0][0])
+
+        #predictions
+        if len(cluster_idx)>2: 
+            preds.append(-1)
+        elif len(cluster_idx)==2:
+            preds.append(cluster_idx[0])
+            
+    return pred_res, labels, preds
