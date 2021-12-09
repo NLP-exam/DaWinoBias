@@ -10,7 +10,7 @@ def evaluate_model(labels, predictions, filename):
         labels: labels 
         predictions: model predictions
     Returns:
-        clf_report: classification report 
+        clf_report: classification report
     """
     # create clf report 
     clf_report = classification_report(labels, predictions)
