@@ -8,7 +8,6 @@ def load_texts(path,condition):
     elif condition == 'pro':
         files = 'da_pro_*.txt'
     for filepath in Path(path).glob(files):
-        print(filepath)
         with open(filepath) as file:
             text = file.readlines()
             lines.append([line.rstrip() for line in text])
@@ -17,35 +16,31 @@ def load_texts(path,condition):
 def get_pred_res(lines,coref_model, nlp): 
     # prediction results: [successful preds, unsuccessful preds, failed preds]
     pred_res = [0,0,0]
+
+    # Look through sentences
     for line in lines: 
-        print("line",line)
         #convert to nlp object
-        doc = nlp(line)
+        line = nlp(line)
 
         #tokenize and lowercase
         tokens = []
-        for token in doc:
+        for token in line:
             tokens.append(token.text.lower())
         
         # get correct coref and incorrect coref to compare with predictions
         coref_res = idx_occ_pron(tokens)
-        #print(coref_res)
 
         # remove square brackets 
         tokens = remove_sq_br(tokens)
 
-        # apply coreference resolution to the document and get a list of features (see below)
-        preds = coref_model.predict(tokens)
+        # apply coreference resolution to the document and get a list of features 
+        #preds = coref_model.predict(tokens)
 
         # apply coreference resolution to the document and get a list of clusters
         clusters = coref_model.predict_clusters(tokens)
 
-        print("clusters",clusters)
-
         # get token indices from predicted cluster
         cluster_idx = [i[1] for i in clusters[0]]
-        #print("cluster_idx", cluster_idx)
-        #print("coref_res",coref_res)
 
         # compare predicted clusters with correct res
         if cluster_idx == coref_res[0]:
