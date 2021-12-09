@@ -2,6 +2,8 @@ import spacy
 from danlp.models import load_xlmr_coref_model
 import sys, os
 from pathlib import Path
+import numpy as np
+from utility_fcs import idx_occ_pron, remove_sq_br
 
 # load the coreference model
 coref_model = load_xlmr_coref_model()
@@ -9,13 +11,9 @@ coref_model = load_xlmr_coref_model()
 # a document is a list of tokenized sentences
 doc = [["Lotte", "arbejder", "med", "Mads", "Emil","."], ["Hun", "er", "tandlæge", "."], ["Han", "er", "assistent"]]
 
-#save indices of coreferenced tokens, i.e. []
-occupations = ['chaufføren', 'supervisoren', 'viceværten', 'kokken', 'flyttemanden', 
-'den ufaglærte', 'entreprenøren', 'lederen', 'udvikleren', 'tømreren', 'manageren', 'advokaten', 
-'landmanden', 'sælgeren', 'lægen', 'vagten', 'analytikeren', 'mekanikeren', 'ceoen','kassedamen',
-'læreren','sygeplejerske','assistent','sekretæren','revisoren','rengøringsassistenten','receptionisten'
-,'kontorassistenten','rådgiveren','designeren','frisøren','forfatteren','husholdersken','bageren','bogholderen'
-,'redaktøren','bibliotekaren','syersken']
+example = '[Udvikleren] diskuterede med designeren, fordi [hun] ikke kunne lide designet.'
+example2 = 'Udvikleren diskuterede med [designeren], fordi [hans] idé ikke kan blive implementeret.'
+example3 = 'Mekanikeren gav [kontorassistenten] en gave, fordi det var [hans] fødselsdag.'
 
 #load doc
 path= os.path.join("NLP","Detecting-Bias-in--LMs","data")
@@ -26,38 +24,34 @@ for filepath in Path(path).glob("*.txt"):
         lines = [line.rstrip() for line in text]
 
 #print example sentences
-print(lines[0])
+print(lines)
 
+results = []
 #tokenise
-nlp = spacy.load("da_core_news_lg")
-doc = nlp(lines[0])
-print(doc.text)
+for line in lines: 
+    #load model
+    nlp = spacy.load("da_core_news_lg")
 
-tokens = []
-for token in doc:
-    tokens.append(token.text)
+    #convert to nlp object
+    doc = nlp(line)
 
-print(tokens)
+    #tokenize and lowercase
+    tokens = []
+    for token in doc:
+        tokens.append(token.text.lower())
 
-#Kiris kode
-#print(tokens)
-#print([i for i in occupations if i in tokens])
-#tokens.index([i for i in occupations if i in tokens][0])
+    print(tokens)
 
-#get indices of coreferenced pairs
-coref_pair_idx = []
-for idx, token in enumerate(tokens):
-    if idx < 1 and token == '[':
-        coref_pair_idx.append(idx)
-    elif idx > 1 and token == '[':
-        coref_pair_idx.append(idx-2)
+    coref_res = idx_occ_pron(tokens)
+    print(coref_res)
+    tokens = remove_sq_br(tokens)
 
-# apply coreference resolution to the document and get a list of features (see below)
-#preds = coref_model.predict(doc)
 
-# apply coreference resolution to the document and get a list of clusters
-#clusters = coref_model.predict_clusters(doc)
+    # apply coreference resolution to the document and get a list of features (see below)
+    preds = coref_model.predict(tokens)
 
-#print(preds)
+    # apply coreference resolution to the document and get a list of clusters
+    clusters = coref_model.predict_clusters(tokens)
 
-#print(clusters)
+    results.append(clusters)
+    print(clusters)

@@ -3,7 +3,7 @@ from danlp.datasets import Dacoref
 dacoref = Dacoref()
 # The corpus can be loaded with or without splitting into train, dev and test in a list in that order
 corpus = dacoref.load_as_conllu(predefined_splits=True)
-#
+
 #Importing neuralcoref
 import spacy
 import neuralcoref
