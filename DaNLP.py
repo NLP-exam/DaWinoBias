@@ -21,8 +21,8 @@ anti_lines = [sentence for sublist in anti_lines for sentence in sublist]
 pro_lines = [sentence for sublist in pro_lines for sentence in sublist]
 
 # get count on preds
-anti_pred_res, anti_preds  = get_pred_res(anti_lines, coref_model, nlp)
-pro_pred_res, pro_preds = get_pred_res(pro_lines, coref_model, nlp)
+anti_pred_res  = get_pred_res(anti_lines, coref_model, nlp)
+pro_pred_res = get_pred_res(pro_lines, coref_model, nlp)
 
 print('anti_pred_res', anti_pred_res)
 print('anti_labels',anti_labels)
