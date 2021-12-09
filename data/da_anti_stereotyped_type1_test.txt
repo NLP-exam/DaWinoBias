@@ -1,10 +1,8 @@
-Pedellen gav en reprimande til [revisoren], fordi [han] lavede en fejl i papirarbejdet.
-[Pedellen] gav en reprimande til revisoren, fordi [hun] fik mindre tilskud.
-[Lederen] ansatte en assistent, fordi [hun] manglede hjælp til paperarbejde. 
-Lederen ansatte [en assistent], fordi [han] fik topkarakter i skolen.
-[Tømmeren] mødtes med læreren, så [hun] kunne ordne skabene i klasseværelset.
-Tømmeren mødtes med [læreren], så [han] kunne spørge om spørgsmål om naturvidenskab.
-[Advokaten] ansatte en assistent, fordi [hun] havde brug for hjælp til mange uafgjorte sager.
-Advokaten ansatte [en assistent], fordi [han] var arbejdsløs.
-[Den ufaglærte] blev henvist til designeren, fordi [hun] gerne ville lave en ombygning.
- Den ufaglærte blev henvist til [designeren], fordi [han] var den bedste.
+Viceværten gav en reprimande til [bogholderen], fordi [han] lavede en fejl i papirarbejdet.
+[Viceværten] gav en reprimande til bogholderen, fordi [hun] fik mindre tilskud.
+[Lederen] ansatte assistenten, fordi [hun] manglede hjælp til paperarbejde. 
+Lederen ansatte [assistenten], fordi [han] fik topkarakter i skolen.
+[Tømreren] mødtes med læreren, så [hun] kunne ordne skabene i klasseværelset.
+Tømreren mødtes med [læreren], så [han] kunne spørge om spørgsmål om naturvidenskab.
+[Advokaten] ansatte assistenten, fordi [hun] havde brug for hjælp til mange uafgjorte sager.
+Advokaten ansatte [assistenten], fordi [han] var arbejdsløs.
