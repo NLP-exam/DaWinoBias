@@ -50,7 +50,7 @@ def get_pred_res(lines,coref_model, nlp):
         else: 
             pred_res[2] += 1
     
-    return pred_res
+    return pred_res, cluster_idx
 
 
 def remove_sq_br(tokens):
