@@ -10,12 +10,12 @@ coref_model = load_xlmr_coref_model()
 doc = [["Lotte", "arbejder", "med", "Mads", "Emil","."], ["Hun", "er", "tandlæge", "."], ["Han", "er", "assistent"]]
 
 #save indices of coreferenced tokens, i.e. []
-occupations = ['Chaufføren', 'Supervisoren', 'Viceværten', 'Kokken', 'Flyttemanden', 
-'Den ufaglærte', 'Entreprenøren', 'Lederen', 'Udvikleren', 'Tømreren', 'Manageren', 'Advokaten', 
-'Landmanden', 'Sælgeren', 'Lægen', 'Vagten', 'Analytikeren', 'Mekanikeren', 'CEOen','Kassedamen',
-'Læreren','Sygeplejerske','Assistent','Sekretæren','Revisoren','Rengøringsassistenten','Receptionisten'
-,'Kontorassistenten','Rådgiveren','Designeren','Frisøren','Forfatteren','Husholdersken','Bageren','Bogholderen'
-,'Redaktøren','Bibliotekaren','Syersken']
+occupations = ['chaufføren', 'supervisoren', 'viceværten', 'kokken', 'flyttemanden', 
+'den ufaglærte', 'entreprenøren', 'lederen', 'udvikleren', 'tømreren', 'manageren', 'advokaten', 
+'landmanden', 'sælgeren', 'lægen', 'vagten', 'analytikeren', 'mekanikeren', 'ceoen','kassedamen',
+'læreren','sygeplejerske','assistent','sekretæren','revisoren','rengøringsassistenten','receptionisten'
+,'kontorassistenten','rådgiveren','designeren','frisøren','forfatteren','husholdersken','bageren','bogholderen'
+,'redaktøren','bibliotekaren','syersken']
 
 #load doc
 path= os.path.join("NLP","Detecting-Bias-in--LMs","data")
