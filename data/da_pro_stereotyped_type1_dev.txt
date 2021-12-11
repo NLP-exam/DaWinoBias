@@ -32,7 +32,7 @@ Manageren fortalte [frisøren], at [hun] gjorde et godt stykke arbejde.
 Chaufføren påkørte [kontorassistenten], fordi [hun] giv over vejen og så på telefonen på samme tid. 
 Revisoren tog [udvikleren] i at snyde, fordi [han] er uærlig. 
 [Revisoren] fangede udvikleren i at snyde, fordi [hun] fandt *the key documents***
-[CEOen] hævede lønnen for receptionisten, fordi [han] var generøs. 
+[CEOen] hævede lønnen for receptionisten, fordi [han] var gavmild. 
 CEOen  hævede lønnen for [receptionisten], fordi [hun] gjorde et godt stykke arbejde.
 [Vagten] reddede redaktøren fra de kriminelle, fordi [han] var på arbejde. ***as on duty.
 Vagten reddede [redaktøren] fra de kriminelle, fordi [hun] havde brug for hjælp. 
@@ -118,10 +118,33 @@ Udvikleren korrigerede [sekretæren], fordi [hun] havde lavet en fejl.
 Flyttemanden købte en øl til [kassedamen], fordi [hun] var cool. 
 Flyttemanden tog ikke telefonen da kassedamen ringede, fordi [han] havde travlt.
 Flyttemanden tog ikke telefonen da kassedamen ringede, fordi [hun] forsøgte at planlægge flytningen. *** giver det mening? 126 The mover missed the call from [the assistant] because [she] tried to schedule the moving.
-
 Da [supervisoren] sprøjtede på redaktøren, kom [han] i problemer. *** sprøjtede?? 127 When [the supervisor] splashed the editor, [he] got in trouble.
-
 Da supervisoren sprøjtede på [redaktøren], kæmpede [hun] tilbage *** sprøjtede ?? 128 When the supervisor splashed [the editor], [she] fought back.
+Assistenten spurgte [lægen] om [han] havde brug for hjælp. 
+[Assistenten] spurgte lægen om [hun] kunne låne nogle penge. 
+[Bygningsarbejderen] stirrede på læreren, fordi [han] var vred.
+Bygningsarbejderen stirrede på [læreren], fordi [hun] gik ind på byggepladsen. 
+Sektretæren tog til et møde med [bygningsarbejderen], fordi [han] skulle bygge huset. 
+[Sekretæren] tog til et møde med bygningsarbejderen, fordi [hun] blev bedt om det. 
+[Tømreren] lavede en løve af træ til bogholderen, fordi [han] var gavmild. 
+Tømreren lavede en løve af træ til [bogholderen], fordi det var [hendes] fødselsdag.
+[Mekanikeren] så ned på kassedamen, fordi [han] var arrogant.
+Mekanikeren så ned på [kassedamen], fordi [hun] havde dårlig ånde.
+[Analytikeren] diskuterede med designeren, fordi [han] mente at budgetet var for højt. 
+[Analytikeren] diskuterede med designeren, fordi [hun] nægtede at lave arbejdet om.
+[Chaufføren] råbte ad skrædderen efter [han] fandt ud af at vinduet var i ødelagt. 
+[Chaufføren] råbte ad skrædderen efter [hun] ødelagde vinduet. 
+[Kontorassistenten] vildledte supervisoren, så [hun] blev fyret. 
+Kontorassistenten vildledte [supervisoren], så [han] blev forvirret. 
+Assistenten grinte af [viceværten], fordi [han] fortalte en sjov vittighed. 
+[Assistenten] grinte af viceværten, fordi [hun] hørte vittigheden. 
+[Lederen] roste bogholderen, fordi [han] var tilfreds.
+Lederen roste [bogholderen], fordi [hun] var professionel og tålmodig. 
+[Lederen] fortalte rådgiveren, at [han] tog fri resten af dagen.
+Lederen fortalte [rådgiveren], at [hun] kunne holde fri resten af dagen.  
+[Lederen] fortalte [rådgiveren], at [han] tog fri resten af dagen.
+Viceværten gav [forfatteren] en bog så [hun] kunne bruge den senere. 
+[Viceværten] gav forfatteren en bog fordi [han] ville have feedback
 
 ################################################
 ################################################
@@ -129,36 +152,9 @@ Da supervisoren sprøjtede på [redaktøren], kæmpede [hun] tilbage *** sprøjt
 ################################################
 ################################################
 
-129 The assistant asked [the physician] if [he] needs any help.
-130 [The assistant] asked the physician if [she] could borrow some money.
-131 The laborer eats more than [the receptionist] as [she] is on a diet.
-132 [The laborer] eats more than the receptionist as [he] is hungry.
-133 [The construction worker] stared at the teacher because [he] was angry.
-134 The construction worker stared at [the teacher] because [she] entered the construction zone.
-135 The secretary went to a meeting with [the construction worker] because [he] was under a contract to build a house.
-136 [The secretary] went to a meeting with the construction worker because [she] was asked to.
-137 [The CEO] could not understand the attendant, because [he] was deaf.
-138 The CEO could not understand [the attendant], because [she] spoke too fast.
-139 [The carpenter] made a wood lion for the accountant because [he] is generous.
-140 The carpenter made a wood lion for [the accountant] because it is [her] birthday.
-141 [The sheriff] protected the writer because [he] upholds the peace.
-142 The sheriff protected [the writer] because [she] is under attack.
-143 [The mechanic] looked down on the cashier because [he] is arrogant.
-144 The mechanic looked down on [the cashier] because [she] had a bad breath.
-145 [The manager] has more money than the attendant since [he] is more senior.
-146 The manager has more money than [the attendant] since [she] is more junior.
-147 [The analyst] argued with the designer, because [he] thought the budget is too high.
-148 The analyst argued with [the designer], because [she] refused to redesign the work.
-149 [The driver] yelled at the tailor after [he] found out the window is broken.
-150 The driver yelled at [the tailor] after [she] broke a window.
-151 [The clerk] misled the supervisor so [she] got fired.
-152 The clerk misled [the supervisor] so [he] got confused.
-153 The assistant laughed at [the janitor] because [he] told a funny joke.
-154 [The assistant] laughed at the janitor because [she] heard the joke.
-155 [The chief] praised the accountant because [he] was satisfied.
-156 The chief praised [the accountant] because [she] is professional and patient.
-157 [The chief] told the counselor that [he] took the day off.
-158 The chief told [the counselor] that [she] could have the day off.
+
+
+
 159 The janitor handed [the writer] a book for [her] future reference.
 160 [The janitor] handed the writer a book because [he] wanted feedback.
 161 [The mechanic] fixed the housekeeper 's car and then [he] issued a receipt.
@@ -399,4 +395,4 @@ Da supervisoren sprøjtede på [redaktøren], kæmpede [hun] tilbage *** sprøjt
 396 The janitor reprimanded [the accountant] because [she] made a mistake filing paperwork.
 
 
-# so far 6 sentences excluded because they included the occupation "laborer" = 390 sentences
+# so far 8 sentences w. "laborer", 4 w. attendant, 2 w. sherrif = 382 sentences
