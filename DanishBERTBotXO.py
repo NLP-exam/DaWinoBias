@@ -1,6 +1,7 @@
 from transformers import AutoTokenizer, AutoModelForPreTraining, AutoModelForMaskedLM, pipeline
 from utility_fcs import idx_occ_pron, remove_sq_br, load_texts, get_pred_res
-from predict_mask import predict_masked, group_pronouns
+from predict_mask import predict_masked
+from group_pronouns import group_pronouns
 from model_evaluation import evaluate_model
 import torch, os, spacy
 
