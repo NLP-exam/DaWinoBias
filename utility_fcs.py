@@ -1,19 +1,24 @@
 import os
 from pathlib import Path
 
-def load_texts(path,condition):
+def load_texts(path,condition,dev_test):
     lines = []
-    if condition == 'anti':
-        files = 'da_anti_*.txt'
-    elif condition == 'pro':
-        files = 'da_pro_*.txt'
+    if condition == 'anti': 
+        file_condition = 'da_anti_'
+    elif condition == 'pro': 
+        file_condition = 'da_pro_'
+    if dev_test == 'dev':
+        file_set = '*_dev.txt'
+    elif dev_test == 'test':
+        file_set = '*_test.txt'
+    elif dev_test == 'both': 
+        file_set  = '*.txt'
+    files = file_condition + file_set
     for filepath in Path(path).glob(files):
         with open(filepath) as file:
             text = file.readlines()
             lines.append([line.rstrip() for line in text])
     return lines
-
-
 
 def idx_occ_pron(tokens):
     #define occupations, pronouns and '[]'
@@ -34,20 +39,20 @@ def idx_occ_pron(tokens):
 
     #find correct referenced occupation in string
     sq_idx = [tokens.index(i) for i in square_brackets if i in tokens][0]
-    
+
     #remove square brackets
     tokens = remove_sq_br(tokens)[0]
     
     #Find idx of occupations
     occ_idx = [tokens.index(token) for token in tokens if token in occupations]
-
+    
     #find the incorrect referenced occupations in string
     occ_idx.remove(sq_idx)
 
     #save correct and incorrect answer
     correct_cluster = [sq_idx, prons_idx]
     incorrect_cluster = [occ_idx[0], prons_idx]
-    return [correct_cluster, incorrect_cluster]
+    return [correct_cluster, incorrect_cluster], prons_idx
 
 def remove_sq_br(tokens):
     #remove '[]'
@@ -58,6 +63,7 @@ def get_pred_res(lines,coref_model, nlp):
     pred_res = [0,0,0]
 
     labels, preds = [], []
+    labels_occ, preds_occ = [], []
 
     # Look through sentences
     for line in lines: 
@@ -70,13 +76,10 @@ def get_pred_res(lines,coref_model, nlp):
             tokens.append(token.text.lower())
         
         # get correct coref and incorrect coref to compare with predictions
-        coref_res = idx_occ_pron(tokens)
+        coref_res,_ = idx_occ_pron(tokens)
 
         # remove square brackets 
         tokens = remove_sq_br(tokens)
-
-        # apply coreference resolution to the document and get a list of features 
-        #preds = coref_model.predict(tokens)
 
         # apply coreference resolution to the document and get a list of clusters
         clusters = coref_model.predict_clusters(tokens)
@@ -94,11 +97,15 @@ def get_pred_res(lines,coref_model, nlp):
     
         # labels 
         labels.append(coref_res[0][0])
-
+        
         #predictions
         if len(cluster_idx)>2: 
             preds.append(-1)
         elif len(cluster_idx)==2:
             preds.append(cluster_idx[0])
-            
-    return pred_res, labels, preds
+        
+        #occupation labels
+        labels_occ.append(tokens[0][coref_res[0][0]])
+        preds_occ.append(tokens[0][cluster_idx[0]])
+
+    return pred_res, labels_occ, preds_occ
