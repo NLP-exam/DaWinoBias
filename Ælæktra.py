@@ -1,13 +1,12 @@
-from transformers import AutoTokenizer, AutoModelForPreTraining, AutoModelForMaskedLM, pipeline
-from utility_fcs import idx_occ_pron, remove_sq_br, load_texts, get_pred_res
-from predict_mask import predict_masked
-from group_pronouns import group_pronouns
-from model_evaluation import evaluate_model
-import torch, os, spacy
+from transformers import AutoTokenizer, AutoModelForPreTraining
+from utility_fcs import load_texts, remove_sq_br
+import torch, spacy, os
 
-model = "Maltehb/danish-bert-botxo"
-nlp =  pipeline(task = "fill-mask", model = model) 
-tokenizer = spacy.load("da_core_news_lg") 
+tokenizer = AutoTokenizer.from_pretrained("Maltehb/-l-ctra-danish-electra-small-uncased")
+discriminator = AutoModelForPreTraining.from_pretrained("Maltehb/-l-ctra-danish-electra-small-uncased")
+
+#load model used for tokenization
+nlp = spacy.load("da_core_news_lg") 
 
 #test set
 anti_lines, pro_lines = [], []
@@ -16,17 +15,25 @@ anti_lines = load_texts(path,"anti", "both")
 pro_lines = load_texts(path,"pro", "both")
 
 # flatten lists
-anti_lines = [sentence for sublist in anti_lines for sentence in sublist]
-pro_lines = [sentence for sublist in pro_lines for sentence in sublist]
+anti_lines = [sentence for sublist in anti_lines for sentence in sublist][0:1]
+pro_lines = [sentence for sublist in pro_lines for sentence in sublist][0:1]
 
-#mask and predict pronoun 
-anti_labels, anti_preds = predict_masked(lines = anti_lines, nlp = nlp, tokenizer = tokenizer)
-pro_labels, pro_preds = predict_masked(lines = pro_lines, nlp = nlp, tokenizer = tokenizer)
+for anti_line, pro_line in zip(anti_lines, pro_lines): 
+    # convert to nlp object
+    anti_line_nlp = nlp(anti_line)
 
-#group pronouns
-anti_labels, anti_preds = group_pronouns(anti_labels),group_pronouns(anti_preds) 
-pro_labels, pro_preds = group_pronouns(pro_labels),group_pronouns(pro_preds) 
+    # tokenize and lowercase
+    fake_tokens = []
+    for token in anti_line_nlp:
+            fake_tokens.append(token.text.lower())
+    
+    fake_tokens = remove_sq_br(fake_tokens)
+    #fake_tokens = tokenizer.tokenize(anti_line)
 
-#evaluate performance
-print(evaluate_model(anti_labels, anti_preds, filename = 'anti_results_mlm'))
-print(evaluate_model(pro_labels, pro_preds, filename = 'pro_results_mlm'))
+    fake_inputs = tokenizer.encode(anti_line, return_tensors="pt")
+    discriminator_outputs = discriminator(fake_inputs)
+    predictions = torch.round((torch.sign(discriminator_outputs[0]) + 1) / 2)
+
+    [print("%7s" % token, end="\n") for token in fake_tokens]
+
+    [print("%7s" % prediction, end="") for prediction in predictions.squeeze().tolist()]
