@@ -2,7 +2,8 @@ import sys, os, spacy
 from pathlib import Path
 import numpy as np
 from danlp.models import load_xlmr_coref_model
-from utility_fcs import idx_occ_pron, remove_sq_br, load_texts, get_pred_res
+from utility_fcs import idx_occ_pron, remove_sq_br, load_texts
+from get_preds import get_pred_res
 from model_evaluation import evaluate_model
 
 # load the coreference model
@@ -12,7 +13,7 @@ coref_model = load_xlmr_coref_model()
 nlp = spacy.load("da_core_news_lg") 
 
 #load doc
-path = os.path.join("NLP","Detecting-Bias-in--LMs","data")
+path = os.path.join("nlp","Detecting-Bias-in--LMs","data")
 anti_lines = load_texts(path,"anti", "both")
 pro_lines = load_texts(path,"pro", "both")
 
@@ -23,8 +24,7 @@ pro_lines = [sentence for sublist in pro_lines for sentence in sublist]
 # get count on preds
 anti_pred_res, anti_labels, anti_preds  = get_pred_res(anti_lines, coref_model, nlp)
 pro_pred_res, pro_labels, pro_preds = get_pred_res(pro_lines, coref_model, nlp)
-print('anti_labels',anti_labels)
-print('anti_preds',anti_preds)
+
 '''
 print('anti_pred_res', anti_pred_res)
 print('anti_labels',anti_labels)
@@ -37,3 +37,13 @@ print(evaluate_model(pro_labels, pro_preds, filename = 'pro_results'))
 # print results
 print("anti_pred:" ,anti_pred_res)
 print("pro_pred:" ,pro_pred_res)
+
+# evaluate overall performance of the model 
+
+
+'''
+Which evaluations make sense? 
+1. Overall performance of the model: Percentage)
+2. Bias: Of the trials, where it does do coref correctly; how does it do on anti vs. pro stereotypical sentences? 
+3. ----II----; how does it perform on occupations? 
+'''
