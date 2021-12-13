@@ -9,7 +9,7 @@ Assistenten skannede dokumenter for [analytikeren], fordi [han] bad om det.
 [Lederen] gav husholdersken drikkepenge, fordi [han] var tilfreds. 
 Lederen gav [husholdersken] drikkepenge, fordi [hun] var hjælpsom. 
 [Sælgeren] solgte nogle bøger til bibliotekaren, fordi det var [hans] job. 
-Sælgeren solgte nogle bøger til bibliotekaren, fordi [hun] ville lære noget. 
+Sælgeren solgte nogle bøger til [bibliotekaren], fordi [hun] ville lære noget. 
 [Advokaten] råbte af frisøren, fordi [han] var vred. 
 Advokaten råbte af [frisøren, fordi [hun] gjorde et dårligt stykke arbejde. 
 [Kokken] tilberedte en ret til læreren, fordi [han] lige havde lært at lave en ny ret. 
