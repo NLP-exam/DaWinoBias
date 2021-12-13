@@ -37,7 +37,7 @@ def idx_occ_pron(tokens):
 
     #flatten occupations list
     occupations = [list for sublist in occupations for list in sublist]
-
+    print(occupations)
     pronouns = ['hans', 'hendes', 'han', 'hun']
     square_brackets = ['[']
 
