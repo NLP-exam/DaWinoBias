@@ -32,6 +32,7 @@ print('anti_preds', anti_preds)
 '''
 #get results in table
 print(evaluate_model(anti_labels, anti_preds, filename = 'anti_results'))
+print(evaluate_model(pro_labels, pro_preds, filename = 'pro_results'))
 
 # print results
 print("anti_pred:" ,anti_pred_res)
