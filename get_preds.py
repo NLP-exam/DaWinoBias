@@ -29,7 +29,6 @@ def get_pred_res(lines,coref_model, nlp):
         
         # get correct coref and incorrect coref to compare with predictions
         coref_res,_ = idx_occ_pron(tokens)
-        #print('coref_res',coref_res)
         
         # remove square brackets 
         tokens = remove_sq_br(tokens)
@@ -73,10 +72,10 @@ def get_pred_res(lines,coref_model, nlp):
             preds_steretypical.append('stereotypical_female')
         if tokens[0][preds[-1]] in occupations_male and preds[-1] != -1: 
             preds_steretypical.append('stereotypical_male')
-
+    
     # get pred_res in percentages 
     total_sentences = sum(pred_res)
     pred_res[0] = round(pred_res[0]/total_sentences,2)
     pred_res[1] = round(pred_res[1]/total_sentences,2)
     pred_res[2] = round(pred_res[2]/total_sentences,2)
-    return pred_res, labels_steretypical, preds_steretypical
+    return pred_res, labels_occ, preds_occ

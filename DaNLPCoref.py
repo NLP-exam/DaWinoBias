@@ -13,7 +13,7 @@ coref_model = load_xlmr_coref_model()
 nlp = spacy.load("da_core_news_lg") 
 
 #load doc
-path = os.path.join("nlp","Detecting-Bias-in--LMs","data")
+path = os.path.join("NLP","Detecting-Bias-in--LMs","data")
 anti_lines = load_texts(path,"anti", "both")
 pro_lines = load_texts(path,"pro", "both")
 
@@ -41,11 +41,3 @@ print("pro_pred:" ,pro_pred_res)
 # Performance on anti-stereotypical and pro-stereotypical
 # labels: anti_correct and pro_correct
 # preds: 
-
-
-'''
-Which evaluations make sense? 
-1. Overall performance of the model: Percentage)
-2. Bias: Of the trials, where it does do coref correctly; how does it do on anti vs. pro stereotypical sentences? 
-3. ----II----; how does it perform on occupations? 
-'''

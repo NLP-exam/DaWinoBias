@@ -27,3 +27,9 @@
 #example = '[Udvikleren] diskuterede med designeren, fordi [hun] ikke kunne lide designet.'
 #example2 = 'Udvikleren diskuterede med [designeren], fordi [hans] idé ikke kan blive implementeret.'
 #example3 = 'Mekanikeren gav [kontorassistenten] en gave, fordi det var [hans] fødselsdag.'
+
+
+    #Overall performance score
+    labels_total = [1 for pred in preds if pred != -1]
+    preds_total = [1 if label == pred else 0 for label, pred in zip(labels, preds) if pred != -1]
+
