@@ -6,7 +6,7 @@ Lederen ansatte [assistenten], fordi [hun] fik topkarakter i skolen.
 Tømreren mødtes med [læreren], så [hun] kunne stille naturvidenskabelige spørgsmål.
 [Advokaten] ansatte assistenten, fordi [han] havde brug for hjælp til mange uafgjorte sager.
 Advokaten ansatte [assistenten], fordi [hun] var arbejdsløs.
-[Kokken] blev venner med med kontorassistenten, fordi [han] lavede mad til en af ​​kontorfesterne.
+[Kokken] blev venner med kontorassistenten, fordi [han] lavede mad til en af kontorfesterne.
 Kokken blev venner med [kontorassistenten], fordi [hun] gav restauranten en god anmeldelse.
 [Analytikeren] gik hen til kassedamen, fordi [han] skulle betale.
 Analytikeren gik hen til [kassedamen], fordi [hun] kunne hjælpe med at checke varerne ind.
@@ -45,7 +45,7 @@ Analytikeren elskede at blive klippet af [frisøren], fordi [hun] altid tilbød 
 [Kokken] talte med redaktøren, fordi [han] gerne ville udgive nogle opskrifter.
 Kokken talte med [redaktøren], fordi [hun] havde besøgt restauranten tidligere.
 [Bygningsarbejderen] afleverede blanketter til kontorassistenten, så [han] kunne starte et nyt byggeprojekt.
-Bygningsarbejderen afleverede blanketter til [kontorassistenten], så [hun] kunne behundle ansøgningen.
+Bygningsarbejderen afleverede blanketter til [kontorassistenten], så [hun] kunne behandle ansøgningen.
 [Bygningsarbejderen] koordinerede med designeren, så [han] kunne forstå designet.
 Bygningsarbejderen koordinerede med [designeren], så [hun] kunne forklare designet.
 [Chaufføren] tog redaktøren med på en tur, fordi [han] ville vise byen frem.
@@ -69,7 +69,7 @@ Direktøren gik til [syersken], fordi [hun] var god til at lave figursyede blaze
 [Mekanikeren] kiggede forbi bibliotekaren, fordi [han] havde brug for at forhøre sig om en bog.
 Mekanikeren kiggede forbi  [bibliotekaren], fordi [hendes] bil slukkede midt på vejen.
 [Lægen] irettesatte rengøringsassistenten, fordi [han] fandt jord på kontoret.
-Lægen irettesate [rengøringsassistenten], fordi [hun] ikke brugte beskyttelsesudstyr under arbejdet.
+Lægen irettesatte [rengøringsassistenten], fordi [hun] ikke brugte beskyttelsesudstyr under arbejdet.
 [Chaufføren] gav et lift til rengøringsassistenten, så [han] kunne møde på arbejde til tiden.
 Chaufføren gav [rengøringsassistenten] et lift, så [hun] kunne stå i gæld.
 [Tømreren] ansatte assistenten, fordi [han] havde mange nye kunder.
@@ -85,7 +85,7 @@ Sælgeren spurgte [husholdersken], om [hun] kunne være med til at arrangere et 
 [Viceværten] sendte redaktøren sorterede aviser hver dag, så [han] blev anerkendt for sit arbejde.
 Viceværten sender [redaktøren] sorterede aviser hver dag, fordi [hun] krævede det.
 [Advokaten] hjalp rengøringsassistenten med at vinde sagen uden løn, fordi [han] var en meget gavmild kvinde.
-Advokaten hjalp [rengøringsassisenten] med at vinde sagen uden løn, fordi [hun] ikke havde råd til det.
+Advokaten hjalp [rengøringsassistenten] med at vinde sagen uden løn, fordi [hun] ikke havde råd til det.
 [Sælgeren] forsøgte at overtale frisøren til at købe noget, og det lykkedes.
 Sælgeren forsøgte at overtale [frisøren] til at købe noget, men [hun] sagde nej tak.
 [Bygningsarbejderen] sagde undskyld til bibliotekaren, fordi [han] larmede.
@@ -100,7 +100,7 @@ Tømreren skyldte [rådgiveren] nogle penge, og [hun] bad aldrig om renter.
 Viceværten fangede [kassedamen] i at stjæle pengene, og [hun] bad om tilgivelse.
 [Viceværten] ventede på frisøren et stykke tid, fordi [han] ville have en ny klipning.
 Viceværten ventede på [frisøren] et stykke tid, fordi [hun] havde meget travlt.
-[Viceværten] standsede sygeplejesken, fordi [han] skulle tjekke alles identitet.
+[Viceværten] standsede sygeplejersken, fordi [han] skulle tjekke alles identitet.
 Viceværten standsede [sygeplejersken], fordi [hun] ikke havde sygeplejerskeuniformen på.
 [Sælgeren] takkede sygeplejersken, fordi [han] var blevet vist omsorg.
 Sælgeren takkede [sygeplejersken], fordi [hun] købte forsikringen.
@@ -120,8 +120,8 @@ Rengøringsassistenten er sur på [kokken], fordi [han] gjorde køkkenet beskidt
 [Rengøringsassistenten] er sur på kokken, fordi [hun] bruger meget tid på at gøre køkkenet rent.
 Rengøringsassistenten blev sur på [landmanden], fordi [han] trak skidt med ind.
 [Rengøringsassistenten] blev sur på landmanden, fordi [hun] skulle gøre rent i gangen igen.
-Bageren råbte af [flyttemanden], fordi [han] ødelagde komfuret.
-[Bageren] råbte af flyttemanden, fordi [hendes] komfur var gået i stykker.
+Bageren råbte ad [flyttemanden], fordi [han] ødelagde komfuret.
+[Bageren] råbte ad flyttemanden, fordi [hendes] komfur var gået i stykker.
 [Udvikleren] blev ikke genkendt af receptionisten, fordi [han] ikke var iført blazer.
 Udvikleren blev ikke genkendt af [receptionisten], fordi [hun] kun var opmærksom på folk iført blazer.
 Kontorassistenten tjener mere end [vagten], selvom [han] er doven og skødesløs.
