@@ -1,14 +1,24 @@
 from utility_fcs import idx_occ_pron, remove_sq_br
 
 def get_pred_res(lines,coref_model, nlp): 
-    #define occupations
     occupations_male = ['chaufføren', 'supervisoren', 'viceværten', 'kokken', 'flyttemanden', 
-    'ufaglærte', 'entreprenøren', 'lederen', 'udvikleren', 'tømreren', 'manageren', 'advokaten', 
-    'landmanden', 'sælgeren', 'lægen', 'vagten', 'analytikeren', 'mekanikeren', 'ceoen']
+    'entreprenøren', 'lederen', 'udvikleren', 'tømreren', 'bestyreren', 
+    'advokaten', 'landmanden', 'sælgeren', 'lægen', 'vagten', 
+    'analytikeren', 'mekanikeren', 'direktøren','bygningsarbejderen']
+    occupations_male_poss = [occ + 's' for occ in occupations_male] # possessive case
 
-    occupations_female = ['kassedamen', 'læreren','sygeplejersken','assistenten','sekretæren','revisoren','rengøringsassistenten','receptionisten'
-    ,'kontorassistenten','rådgiveren','designeren','frisøren','forfatteren','husholdersken','bageren','bogholderen'
-    ,'redaktøren','bibliotekaren','syersken']
+    occupations_female = ['kassedamen', 'læreren','sygeplejersken','assistenten','sekretæren',
+    'revisoren','rengøringsassistenten','receptionisten','kontorassistenten','rådgiveren',
+    'designeren','frisøren','forfatteren','husholdersken','bageren',
+    'bogholderen','redaktøren','bibliotekaren','syersken']
+    occupations_female_poss = [occ + 's' for occ in occupations_female] # possessive case
+
+    #create one coherent occupations list
+    occupations = []
+    occupations.append(occupations_male)
+    occupations.append(occupations_male_poss)
+    occupations.append(occupations_female)
+    occupations.append(occupations_female_poss)
 
     # prediction results: [successful preds, unsuccessful preds, failed preds]
     pred_res = [0,0,0]

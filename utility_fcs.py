@@ -21,7 +21,7 @@ def load_texts(path,condition,dev_test):
     return lines
 
 def idx_occ_pron(tokens):
-    #define occupations, pronouns and '[]'
+    #define occupations
     occupations_male = ['chaufføren', 'supervisoren', 'viceværten', 'kokken', 'flyttemanden', 
     'entreprenøren', 'lederen', 'udvikleren', 'tømreren', 'bestyreren', 
     'advokaten', 'landmanden', 'sælgeren', 'lægen', 'vagten', 
