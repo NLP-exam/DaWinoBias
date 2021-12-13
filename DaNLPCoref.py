@@ -38,7 +38,9 @@ print(evaluate_model(pro_labels, pro_preds, filename = 'pro_results'))
 print("anti_pred:" ,anti_pred_res)
 print("pro_pred:" ,pro_pred_res)
 
-# evaluate overall performance of the model 
+# Performance on anti-stereotypical and pro-stereotypical
+# labels: anti_correct and pro_correct
+# preds: 
 
 
 '''
