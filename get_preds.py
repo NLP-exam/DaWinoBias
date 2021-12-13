@@ -75,7 +75,7 @@ def get_pred_res(lines,coref_model, nlp):
             preds_steretypical.append('stereotypical_male')
 
     # get pred_res in percentages 
-    print('total_sentences', total_sentences)
+    total_sentences = sum(pred_res)
     pred_res[0] = round(pred_res[0]/total_sentences,2)
     pred_res[1] = round(pred_res[1]/total_sentences,2)
     pred_res[2] = round(pred_res[2]/total_sentences,2)
