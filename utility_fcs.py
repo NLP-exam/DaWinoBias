@@ -146,3 +146,38 @@ def get_pred_res(lines,coref_model, nlp):
             preds_steretypical.append('stereotypical_male')
 
     return pred_res, labels_steretypical, preds_steretypical
+
+
+def load_occs(female=False,male=False):
+    all_occupations, occupations_no_poss, occupations_poss = [], [], []
+    if male:
+        occupations_male = ['chaufføren', 'supervisoren', 'viceværten', 'kokken', 'flyttemanden', 
+        'bygningsarbejderen', 'lederen', 'udvikleren', 'tømreren', 'bestyreren', 
+        'advokaten', 'landmanden', 'sælgeren', 'lægen', 'vagten', 
+        'analytikeren', 'mekanikeren', 'direktøren']
+        occupations_male_poss = [occ + 's' for occ in occupations_male] # possessive case
+
+    if female:
+        occupations_female = ['ekspedienten', 'læreren','sygeplejersken','assistenten','sekretæren',
+        'revisoren','rengøringsassistenten','receptionisten','kontorassistenten','rådgiveren',
+        'designeren','frisøren','forfatteren','husholdersken','bageren',
+        'bogholderen','redaktøren','bibliotekaren','syersken']
+        occupations_female_poss = [occ + 's' for occ in occupations_female] # possessive case
+
+    if male and not female: 
+        # occ's without pos and with pos
+        occupations_no_poss, occupations_poss = occupations_male, occupations_male_poss
+
+    if female and not male: 
+        # occ's without pos and with pos
+        occupations_no_poss, occupations_poss = occupations_female, occupations_female_poss
+
+    if male and female:
+        # list with occ's without possessive case
+        occupations_no_poss = occupations_male + occupations_female
+        # list with occ's with possessive case
+        occupations_poss = occupations_male_poss + occupations_female_poss
+
+    # list with all occupations
+    all_occupations = occupations_no_poss + occupations_poss
+    return all_occupations, occupations_no_poss, occupations_poss

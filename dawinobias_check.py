@@ -2,41 +2,6 @@ import os
 from utility_fcs import load_texts, load_occs
 from collections import Counter
 
-def load_occ(female=False,male=False):
-    all_occupations, occupations_no_poss, occupations_poss = [], [], []
-    if male:
-        occupations_male = ['chaufføren', 'supervisoren', 'viceværten', 'kokken', 'flyttemanden', 
-        'bygningsarbejderen', 'lederen', 'udvikleren', 'tømreren', 'bestyreren', 
-        'advokaten', 'landmanden', 'sælgeren', 'lægen', 'vagten', 
-        'analytikeren', 'mekanikeren', 'direktøren']
-        occupations_male_poss = [occ + 's' for occ in occupations_male] # possessive case
-
-    if female:
-        occupations_female = ['ekspedienten', 'læreren','sygeplejersken','assistenten','sekretæren',
-        'revisoren','rengøringsassistenten','receptionisten','kontorassistenten','rådgiveren',
-        'designeren','frisøren','forfatteren','husholdersken','bageren',
-        'bogholderen','redaktøren','bibliotekaren','syersken']
-        occupations_female_poss = [occ + 's' for occ in occupations_female] # possessive case
-
-    if male and not female: 
-        # occ's without pos and with pos
-        occupations_no_poss, occupations_poss = occupations_male, occupations_male_poss
-
-    if female and not male: 
-        # occ's without pos and with pos
-        occupations_no_poss, occupations_poss = occupations_female, occupations_female_poss
-
-    if male and female:
-        # list with occ's without possessive case
-        occupations_no_poss = occupations_male + occupations_female
-        # list with occ's with possessive case
-        occupations_poss = occupations_male_poss + occupations_female_poss
-
-    # list with all occupations
-    all_occupations = occupations_no_poss + occupations_poss
-    return all_occupations, occupations_no_poss, occupations_poss
-
-
 # load data 
 path = os.path.join("nlp","Detecting-Bias-in--LMs","data")
 anti_lines = load_texts(path,"anti", "both")
@@ -50,9 +15,9 @@ anti_lines = ' '.join(anti_lines)
 anti_lines = anti_lines.lower()
 
 # load occupations
-_, occ_no_poss, occ_poss = load_occ(female=True,male=True)
-_, f_occ_no_poss, f_occ_poss = load_occ(female=True)
-_, m_occ_no_poss, m_occ_poss = load_occ(male=True)
+_, occ_no_poss, _ = load_occs(female=True,male=True)
+_, f_occ_no_poss, _ = load_occs(female=True)
+_, m_occ_no_poss, _ = load_occs(male=True)
 
 # count of each occupation is present in data 
 occ_dic = {occ: anti_lines.count(occ) for occ in occ_no_poss}
