@@ -1,0 +1,5 @@
+,UNK,han/hans,hun/hendes,accuracy,macro avg,weighted avg
+precision,0.03,0.51,0.54,0.46,0.36,0.53
+recall,1.0,0.73,0.19,0.46,0.64,0.46
+f1-score,0.05,0.6,0.28,0.46,0.31,0.44
+support,1.0,165.0,166.0,0.46,332.0,332.0

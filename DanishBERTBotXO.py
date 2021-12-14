@@ -32,5 +32,5 @@ anti_labels, anti_preds = group_pronouns(anti_labels),group_pronouns(anti_preds)
 pro_labels, pro_preds = group_pronouns(pro_labels),group_pronouns(pro_preds) 
 
 #evaluate performance
-evaluate_model(anti_labels, anti_preds, filename = 'anti_results_mlm')
-evaluate_model(pro_labels, pro_preds, filename = 'pro_results_mlm')
+evaluate_model(anti_labels, anti_preds, filename = 'results/anti_results_mlm')
+evaluate_model(pro_labels, pro_preds, filename = 'results/pro_results_mlm')

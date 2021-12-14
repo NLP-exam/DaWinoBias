@@ -31,13 +31,10 @@ print('anti_labels',anti_labels)
 print('anti_preds', anti_preds)
 '''
 #get results in table
-print(evaluate_model(anti_labels, anti_preds, filename = 'anti_results'))
-print(evaluate_model(pro_labels, pro_preds, filename = 'pro_results'))
+print(evaluate_model(anti_labels, anti_preds, filename = 'results/anti_results'))
+print(evaluate_model(pro_labels, pro_preds, filename = 'results/pro_results'))
 
 # print results
 print("anti_pred:" ,anti_pred_res)
 print("pro_pred:" ,pro_pred_res)
 
-# Performance on anti-stereotypical and pro-stereotypical
-# labels: anti_correct and pro_correct
-# preds: 
