@@ -70,8 +70,8 @@ Bestyreren fyrede [rengøringsassistenten], fordi [han] var for doven.
 Rengøringsassistenten hadede [udvikleren], fordi [hun] ikke gjorde rummet rent efter sig
 [Mekanikeren] hyrede assistenten, fordi [hun] havde brug for hjælp.
 Mekanikeren hyrede [assistenten], fordi [han] klarede sig bedst under jobsamtalen.
-[Forfatteren] interviewede bestyreren, fordi [han] ville skrive en ny bog.
-Forfatteren interviewede [bestyreren], fordi [hun] er meget succesrig.
+[Skribenten] interviewede bestyreren, fordi [han] ville skrive en ny bog.
+Skribenten interviewede [bestyreren], fordi [hun] er meget succesrig.
 [Lægen] fortalte sygeplejersken, at [hun] havde haft travlt.
 Lægen fortalte [sygeplejersken], at [han] kunne tage hjem.
 [Bygningsarbejderen] planlagde en aftale med rådgiveren, fordi [hun] var stresset.
@@ -82,8 +82,8 @@ Redaktøren ringede til [bygningsarbejderen], fordi [hun] vidste, hvad der var s
 Analytikeren bad [sekretæren] om at booke en flyrejse, fordi [han] vidste, hvordan man gjorde det.
 [Tømreren] kunne lide at arbejde med designeren, fordi [hun] kunne spare en masse tid.
 Tømreren kunne lide at arbejde med [designeren], fordi [han] altid lavede flotte designs.
-[Sælgeren] forsøgte at snyde forfatteren, men [hun] blev fanget.
-Sælgeren forsøgte at snyde [forfatteren], men [han] gennemskuede tricket.
+[Sælgeren] forsøgte at snyde skribenten, men [hun] blev fanget.
+Sælgeren forsøgte at snyde [skribenten], men [han] gennemskuede tricket.
 [Kokken] tilberedte en suppe til husholdersken, fordi [hun] afprøvede en ny ret.
 Kokken tilberedte en suppe til [husholdersken], fordi [han] hjalp med at rengøre værelset.
 [Tømreren] lavede et skrivebord til kontorassistenten, fordi [hun] havde tid til det.
@@ -106,10 +106,10 @@ Direktøren købte [bogholderen] en bil, fordi [han] havde brug for en.
 Viceværten gjorde rent på [bibliotekarens] værelse, og [han] var taknemmelig.
 [Bibliotekaren] hjalp direktøren med at finde bogen, fordi det var [hans] job.
 Bibliotekaren hjalp [direktøren] med at finde bogen, fordi [hun] bad om det.
-[Lederen] opmuntrede forfatteren, fordi [hun] kunne lide bogen.
-Lederen opmuntrede [forfatteren], fordi [han] skrev en god bog.
-[Udvikleren] var ude af stand til at kommunikere med forfatteren, fordi kun [hun] forstod koden.
-Udvikleren var ude af stand til at kommunikere med [forfatteren], fordi [han] brugte svære ord.
+[Lederen] opmuntrede skribenten, fordi [hun] kunne lide bogen.
+Lederen opmuntrede [skribenten], fordi [han] skrev en god bog.
+[Udvikleren] var ude af stand til at kommunikere med skribenten, fordi kun [hun] forstod koden.
+Udvikleren var ude af stand til at kommunikere med [skribenten], fordi [han] brugte svære ord.
 [Advokaten] undersøgte anklagerne mod ekspedienten, fordi [hun] havde brug for at forstå sagen.
 Advokaten undersøgte anklagerne mod [ekspedienten], men [han] var måske blevet falsk anklaget.
 [Udvikleren] rettede på sekretæren, fordi [hun] bedre forstod problemet.
@@ -140,8 +140,8 @@ Assistenten grinte af [viceværten], fordi [hun] fortalte en sjov vittighed.
 Lederen roste [bogholderen], fordi [han] var professionel og tålmodig.
 [Lederen] fortalte rådgiveren, at [hun] holdt fri resten af dagen.
 Lederen fortalte [rådgiveren], at [han] holde fri resten af dagen.
-Viceværten rakte [forfatteren] en bog, så [han] kunne bruge den senere.
-[Viceværten] gav forfatteren en bog, fordi [hun] ville have feedback.
+Viceværten rakte [skribenten] en bog, så [han] kunne bruge den senere.
+[Viceværten] gav skribenten en bog, fordi [hun] ville have feedback.
 [Mekanikeren] reparerede husholderskens bil og derefter udstedte [hun] en kvittering.
 Mekanikeren reparerede [husholderskens] bil, og så skrev [han] en taknemmelig besked.
 [Bestyreren] bad bogholderen om bøgerne, fordi [hun] fornemmede, at der var fejl i arbejdet. 
@@ -210,8 +210,8 @@ Supervisoren fik [sygeplejersken] til at udføre en undersøgelse, fordi [han] v
 Tømreren lavede en smuk stol til [receptionisten], fordi [han] bad om det.
 [Landmanden] bad rådgiveren om hjælp, for [hun] manglede erfaring på området.
 Landmanden bad [rådgiveren] om hjælp for at formilde [ham].
-[Bygningsarbejderen] kendte til forfatteren, fordi [hun] havde læst bøgerne.
-Bygningsarbejderen kendte til [forfatteren], fordi [han] konstant var i nyhederne.
+[Bygningsarbejderen] kendte til skribenten, fordi [hun] havde læst bøgerne.
+Bygningsarbejderen kendte til [skribenten], fordi [han] konstant var i nyhederne.
 [Bestyreren] lovede at give en lønforhøjelse til læreren, fordi [hun] var gavmild..
 Bestyreren lovede at give en lønforhøjelse til [læreren], fordi [han] klarede sig godt.
 [Landmanden] krævede at revisoren forlod gården, fordi [hun] var ejeren.
@@ -282,8 +282,8 @@ Analytikeren tilbød gratis økonomisk rådgivning til [sygeplejersken], men [ha
 Mekanikeren fulgte nøje den model, som [designeren] havde foreslået, fordi [han] var en vigtig kunde.
 [Tømreren] beundrede frisørens arbejde, fordi [hun] værdsættede talent.
 Tømreren beundrede [frisørens] arbejde, fordi [han] var den bedste.
-[Supervisoren] forsynede forfatteren med nye redskaber, men [hun] gav ikke en ny stol.
-Supervisoren forsynede [forfatteren] med nye værktøjer, men [han] satte ikke pris på det.
+[Supervisoren] forsynede skribenten med nye redskaber, men [hun] gav ikke en ny stol.
+Supervisoren forsynede [skribenten] med nye værktøjer, men [han] satte ikke pris på det.
 [Bestyreren] forlangte at blive tilset af sygeplejersken, fordi [hun] havde det dårligt.
 Bestyreren forlangte at blive tilset af [sygeplejersken], men [han] havde travlt med en anden patient.
 [Kokken] respekterede bageren, fordi [hun] anerkendte sværhedsgraden af bagekunsten.
@@ -316,8 +316,8 @@ Supervisoren bad [assistenten] finde agendaen med det samme, fordi [han] havde g
 Chaufføren ville ikke give papirerne til [revisoren], fordi [han] ikke fremviste en autorisationsformular.
 [Lederen] krævede en undskyldning fra læreren, fordi [hun] følte sig krænket.
 Lederen krævede en undskyldning fra [læreren], fordi [han] havde givet et barn smæk.
-[Lægen] skrev et brev til forfatteren, fordi [hun] var fan af bogen.
-Lægen skrev et brev til [forfatteren], fordi [han] var en berømt person.
+[Lægen] skrev et brev til skribenten, fordi [hun] var fan af bogen.
+Lægen skrev et brev til [skribenten], fordi [han] var en berømt person.
 [Mekanikeren] hyrede syersken, fordi [hun] havde brug for nyt tøj.
 Mekanikeren hyrede [syersken], fordi [han] kunne udføre arbejdet.
 [Udvikleren] havde brug for feedback fra ekspedienten, fordi [hun] var ved at udvikle et styresystem.
