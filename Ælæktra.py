@@ -1,39 +1,86 @@
 from transformers import AutoTokenizer, AutoModelForPreTraining
 from utility_fcs import load_texts, remove_sq_br
 import torch, spacy, os
+from collections import Counter
+from group_pronouns import group_pronouns
 
+#load tokenizer and model
 tokenizer = AutoTokenizer.from_pretrained("Maltehb/-l-ctra-danish-electra-small-uncased")
 discriminator = AutoModelForPreTraining.from_pretrained("Maltehb/-l-ctra-danish-electra-small-uncased")
 
-#load model used for tokenization
-nlp = spacy.load("da_core_news_lg") 
+#define pronouns
+male_pronouns = ['hans', 'han', 'ham']
+female_pronous = ['hendes', 'hun', 'hende']
+pronouns = male_pronouns + female_pronous
 
-#test set
+#initialise results list
+results = []
+results_pronouns = []
+
+#load data
 anti_lines, pro_lines = [], []
 path = os.path.join("NLP","Detecting-Bias-in--LMs","data")
 anti_lines = load_texts(path,"anti", "both")
 pro_lines = load_texts(path,"pro", "both")
 
 # flatten lists
-anti_lines = [sentence for sublist in anti_lines for sentence in sublist][0:1]
-pro_lines = [sentence for sublist in pro_lines for sentence in sublist][0:1]
+anti_lines = [sentence for sublist in anti_lines for sentence in sublist][0:20]
+pro_lines = [sentence for sublist in pro_lines for sentence in sublist][0:20]
 
-for anti_line, pro_line in zip(anti_lines, pro_lines): 
-    # convert to nlp object
-    anti_line_nlp = nlp(anti_line)
 
-    # tokenize and lowercase
-    fake_tokens = []
-    for token in anti_line_nlp:
-            fake_tokens.append(token.text.lower())
-    
-    fake_tokens = remove_sq_br(fake_tokens)
-    #fake_tokens = tokenizer.tokenize(anti_line)
+for anti_line, pro_line in zip(anti_lines, pro_lines):
+        #create input
+        input_ = tokenizer([anti_line, pro_line], return_tensors="pt", padding=True)
+        
+        #tokenize sentences 
+        anti_line = tokenizer.tokenize(anti_line)
+        pro_line = tokenizer.tokenize(pro_line)
 
-    fake_inputs = tokenizer.encode(anti_line, return_tensors="pt")
-    discriminator_outputs = discriminator(fake_inputs)
-    predictions = torch.round((torch.sign(discriminator_outputs[0]) + 1) / 2)
+        #remove brackets 
+        anti_line = remove_sq_br(anti_line)[0]
+        pro_line = remove_sq_br(pro_line)[0]
 
-    [print("%7s" % token, end="\n") for token in fake_tokens]
+        #extract pronoun position (+1 due to [CLS] in beginning of line)
+        anti_pronoun_pos=[anti_line.index(i)+1 for i in anti_line if i in pronouns]
+        pro_pronoun_pos=[pro_line.index(i)+1 for i in pro_line if i in pronouns]
 
-    [print("%7s" % prediction, end="") for prediction in predictions.squeeze().tolist()]
+        #predict odd-one-out
+        discriminator_outputs = discriminator(**input_)
+
+        # extract logits
+        output  = discriminator_outputs.logits
+
+        #Extract relevant probability for pronoun
+        anti_output = output[0:1, anti_pronoun_pos]
+        pro_output = output[1:2, pro_pronoun_pos]
+
+        #If difference larger than 0.01, append the most likely
+        if anti_output > pro_output and abs(anti_output - pro_output) >= 0.001: 
+                results.append('anti')
+        elif pro_output > anti_output and abs(anti_output - pro_output) >= 0.001: 
+                results.append('pro')
+
+        #Does the model in general predict 'han' as more likely?
+        if anti_output > pro_output: 
+                results_pronouns.append(anti_line[anti_pronoun_pos[0]-1])
+        if pro_output > anti_output: 
+                results_pronouns.append(pro_line[pro_pronoun_pos[0]-1])
+
+
+#Count number of pro-stereotypical vs. anti-stereotypical
+dist_results = Counter(results)
+
+#calculate percentage of pro-stereotypical predictions and anti-stereotypical predictions
+print(dist_results['anti']/(dist_results['pro']+dist_results['anti']))
+print(dist_results['pro']/(dist_results['pro']+dist_results['anti']))
+
+#Count number of times 'hun' and 'han'is predicted as most likely, respectively
+print(results_pronouns)
+results_pronouns = group_pronouns(results_pronouns)
+print(results_pronouns)
+dist_results_pronouns = Counter(results_pronouns)
+print(dist_results_pronouns)
+
+#calculate percentage of pro-stereotypical predictions and anti-stereotypical predictions
+print(dist_results_pronouns['hun/hendes']/(dist_results_pronouns['hun/hendes']+dist_results_pronouns['han/hans']))
+print(dist_results_pronouns['han/hans']/(dist_results_pronouns['hun/hendes']+dist_results_pronouns['han/hans']))

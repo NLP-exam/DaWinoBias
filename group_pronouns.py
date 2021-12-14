@@ -2,8 +2,8 @@ def group_pronouns(pronouns):
     '''group labels in female and male pronouns'''
 
     #define groups of pronouns
-    female_pronouns = ['hun', 'hendes']
-    male_pronouns = ['han', 'hans']
+    female_pronouns = ['hun', 'hendes', 'hende']
+    male_pronouns = ['han', 'hans', 'ham']
 
     #initialize lists
     group_pronoun= []
