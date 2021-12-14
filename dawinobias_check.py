@@ -2,12 +2,11 @@ import os
 from utility_fcs import load_texts, load_occs
 from collections import Counter
 
-# load data 
+# load data - we just use anti for this, since pro and anti are identical (except for pronouns)
 path = os.path.join("nlp","Detecting-Bias-in--LMs","data")
 anti_lines = load_texts(path,"anti", "both")
-pro_lines = load_texts(path,"pro", "both")
 
-# flatten lines to one list
+# flatten data to one list
 anti_lines = [sentence for sublist in anti_lines for sentence in sublist]
 
 # make data one string
@@ -15,9 +14,9 @@ anti_lines = ' '.join(anti_lines)
 anti_lines = anti_lines.lower()
 
 # load occupations
-_, occ_no_poss, _ = load_occs(female=True,male=True)
-_, f_occ_no_poss, _ = load_occs(female=True)
-_, m_occ_no_poss, _ = load_occs(male=True)
+all_occ, occ_no_poss = load_occs(female=True,male=True)
+_, f_occ_no_poss = load_occs(female=True)
+_, m_occ_no_poss = load_occs(male=True)
 
 # count of each occupation is present in data 
 occ_dic = {occ: anti_lines.count(occ) for occ in occ_no_poss}
@@ -32,3 +31,13 @@ total = f_sum + m_sum
 print(round(f_sum/total,2),round(m_sum/total,2))
 
 # check position? 
+# tokenize sentences 
+line = nlp(line)
+
+# tokenize and lowercase
+tokens = []
+for token in line:
+    tokens.append(token.text.lower())
+
+tokens = remove_sq_br(tokens)[0]
+occ_idx [tokens.index(token) for token in tokens if token in all_occ]

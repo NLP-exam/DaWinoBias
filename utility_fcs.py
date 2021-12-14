@@ -180,4 +180,5 @@ def load_occs(female=False,male=False):
 
     # list with all occupations
     all_occupations = occupations_no_poss + occupations_poss
-    return all_occupations, occupations_no_poss, occupations_poss
+
+    return all_occupations, occupations_no_poss
