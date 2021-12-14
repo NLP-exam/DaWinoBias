@@ -1,4 +1,4 @@
-import sys, os, spacy
+import sys, os, spacy, random
 from pathlib import Path
 import numpy as np
 from danlp.models import load_xlmr_coref_model
@@ -20,6 +20,10 @@ pro_lines = load_texts(path,"pro", "both")
 # flatten lists
 anti_lines = [sentence for sublist in anti_lines for sentence in sublist]
 pro_lines = [sentence for sublist in pro_lines for sentence in sublist]
+
+# randomize data 
+random.shuffle(anti_lines)
+random.shuffle(pro_lines)
 
 #define occupations
 occupations_male, _ = load_occs(male=True)
