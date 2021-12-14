@@ -3,6 +3,7 @@ from utility_fcs import load_texts, remove_sq_br
 import torch, spacy, os
 from collections import Counter
 from group_pronouns import group_pronouns
+import random
 
 #set seed 
 torch.manual_seed(3)
@@ -20,7 +21,7 @@ results_pronouns = []
 
 #load data
 anti_lines, pro_lines = [], []
-path = os.path.join("NLP","Detecting-Bias-in--LMs","data")
+path = os.path.join("nlp","Detecting-Bias-in--LMs","data")
 anti_lines = load_texts(path,"anti", "both")
 pro_lines = load_texts(path,"pro", "both")
 
@@ -28,6 +29,10 @@ pro_lines = load_texts(path,"pro", "both")
 anti_lines = [sentence for sublist in anti_lines for sentence in sublist]
 pro_lines = [sentence for sublist in pro_lines for sentence in sublist]
 
+# randomize data 
+combined = list(zip(anti_lines, pro_lines))
+random.shuffle(combined)
+anti_lines[:], pro_lines[:] = zip(*combined)
 
 for anti_line, pro_line in zip(anti_lines, pro_lines):
         #create input

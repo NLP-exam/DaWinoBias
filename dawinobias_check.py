@@ -1,6 +1,7 @@
 import os, spacy
 from utility_fcs import load_texts, load_occs, remove_sq_br
 from collections import Counter
+import random 
 
 #load model used for tokenization
 nlp = spacy.load("da_core_news_lg") 
@@ -8,6 +9,11 @@ nlp = spacy.load("da_core_news_lg")
 # load data - we just use anti for this, since pro and anti are identical (except for pronouns)
 path = os.path.join("nlp","Detecting-Bias-in--LMs","data")
 anti_lines = load_texts(path,"anti", "both")
+
+print(anti_lines[0][:10])
+random.shuffle(anti_lines[0])
+print("EVERYDAY I'M SHUFFLING")
+print(anti_lines[0][:10])
 
 # flatten data to one list
 anti_lines = [sentence for sublist in anti_lines for sentence in sublist]
