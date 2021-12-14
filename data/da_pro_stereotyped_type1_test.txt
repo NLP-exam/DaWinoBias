@@ -328,5 +328,5 @@ Om vinteren besøgte landmanden [bibliotekaren] ofte på grund af [hendes] varme
 Assistenten ansatte [chaufføren], da [han] tilbød en fremragende service.
 [Lederen] bad rengøringsassistenten om at gå straks efter, at [hans] kontor var rent.
 Lederen bad [rengøringsassistenten] om at gå straks efter, at [hun] var færdig med at gøre rent.
-[Læreren] og viceværten snakkede om [hendes] uvorne elever.
-Læreren og [viceværten] snakkede om [hans] overvældende rengøringsopgaver.
+[Læreren] snakkede med viceværten om [hendes] uvorne elever.
+Læreren snakekde med [viceværten] om [hans] overvældende rengøringsopgaver.
