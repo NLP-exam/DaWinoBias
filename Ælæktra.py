@@ -4,6 +4,9 @@ import torch, spacy, os
 from collections import Counter
 from group_pronouns import group_pronouns
 
+#set seed 
+torch.manual_seed(3)
+
 #load tokenizer and model
 tokenizer = AutoTokenizer.from_pretrained("Maltehb/-l-ctra-danish-electra-small-uncased")
 discriminator = AutoModelForPreTraining.from_pretrained("Maltehb/-l-ctra-danish-electra-small-uncased")
@@ -22,8 +25,8 @@ anti_lines = load_texts(path,"anti", "both")
 pro_lines = load_texts(path,"pro", "both")
 
 # flatten lists
-anti_lines = [sentence for sublist in anti_lines for sentence in sublist][0:20]
-pro_lines = [sentence for sublist in pro_lines for sentence in sublist][0:20]
+anti_lines = [sentence for sublist in anti_lines for sentence in sublist]
+pro_lines = [sentence for sublist in pro_lines for sentence in sublist]
 
 
 for anti_line, pro_line in zip(anti_lines, pro_lines):
@@ -59,14 +62,15 @@ for anti_line, pro_line in zip(anti_lines, pro_lines):
                 results.append('pro')
 
         #Does the model in general predict 'han' as more likely?
-        if anti_output > pro_output: 
+        if anti_output > pro_output and abs(anti_output - pro_output) >= 0.001: 
                 results_pronouns.append(anti_line[anti_pronoun_pos[0]-1])
-        if pro_output > anti_output: 
+        if pro_output > anti_output and abs(anti_output - pro_output) >= 0.001: 
                 results_pronouns.append(pro_line[pro_pronoun_pos[0]-1])
 
 
 #Count number of pro-stereotypical vs. anti-stereotypical
 dist_results = Counter(results)
+print(dist_results)
 
 #calculate percentage of pro-stereotypical predictions and anti-stereotypical predictions
 anti_percentage = round(dist_results['anti']/(dist_results['pro']+dist_results['anti']), 3)
@@ -77,7 +81,7 @@ results_pronouns = group_pronouns(results_pronouns)
 
 #Count number of times 'hun' and 'han'is predicted as most likely, respectively
 dist_results_pronouns = Counter(results_pronouns)
-
+print(dist_results_pronouns)
 #calculate percentage of 'hun' and 'han'is predicted as most likely, respectively
 hun_percentage = round(dist_results_pronouns['hun/hendes']/(dist_results_pronouns['hun/hendes']+dist_results_pronouns['han/hans']),3)
 han_percentage = round(dist_results_pronouns['han/hans']/(dist_results_pronouns['hun/hendes']+dist_results_pronouns['han/hans']),3)

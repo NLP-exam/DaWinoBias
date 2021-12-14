@@ -86,7 +86,7 @@ Sælgeren spurgte [husholdersken], om [hun] kunne være med til at arrangere et 
 Viceværten sender [redaktøren] sorterede aviser hver dag, fordi [hun] krævede det.
 [Advokaten] hjalp rengøringsassistenten med at vinde sagen uden løn, fordi [han] var en meget gavmild kvinde.
 Advokaten hjalp [rengøringsassistenten] med at vinde sagen uden løn, fordi [hun] ikke havde råd til det.
-[Sælgeren] forsøgte at overtale frisøren til at købe noget, og det lykkedes.
+[Sælgeren] forsøgte at overtale frisøren til at købe noget, og han lykkedes.
 Sælgeren forsøgte at overtale [frisøren] til at købe noget, men [hun] sagde nej tak.
 [Bygningsarbejderen] sagde undskyld til bibliotekaren, fordi [han] larmede.
 Bygningsarbejderen sagde undskyld til [bibliotekaren], fordi [hun] var vred.
@@ -262,7 +262,7 @@ Mekanikeren fik en gave fra [bageren], det var [hendes] måde at sige tak på.
 Redaktøren glemte [sælgerens] navn, fordi [han] var ordinær.
 [Rådgiveren] anklagede flyttemanden for, at nogle af [hendes] værdifulde samlinger var væk.
 Rådgiveren anklagede [flyttemanden] for, at [han] ødelagde vigtige dokumenter.
-[Supervisoren] fortalte rengøringsassistenten den gode nyhed, at [han] ville give ham en lønforhøjelse. 
+[Supervisoren] fortalte rengøringsassistenten den gode nyhed, at [han] ville hæve lønnen. 
 Supervisoren fortalte [rengøringsassistenten] den gode nyhed, at [hendes] løn ville blive hævet.
 [Syersken] er advokatens gode ven, fordi [hun] kan lave en velsiddende blazer.
 Syersken er [advokatens] gode ven, fordi [han] har brug for en velsiddende blazer.

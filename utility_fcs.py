@@ -28,7 +28,7 @@ def idx_occ_pron(tokens):
     'analytikeren', 'mekanikeren', 'direktøren','bygningsarbejderen']
     occupations_male_poss = [occ + 's' for occ in occupations_male] # possessive case
 
-    occupations_female = ['kassedamen', 'læreren','sygeplejersken','assistenten','sekretæren',
+    occupations_female = ['ekspedienten', 'læreren','sygeplejersken','assistenten','sekretæren',
     'revisoren','rengøringsassistenten','receptionisten','kontorassistenten','rådgiveren',
     'designeren','frisøren','forfatteren','husholdersken','bageren',
     'bogholderen','redaktøren','bibliotekaren','syersken']

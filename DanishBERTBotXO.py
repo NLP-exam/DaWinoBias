@@ -9,7 +9,7 @@ model = "Maltehb/danish-bert-botxo"
 nlp =  pipeline(task = "fill-mask", model = model) 
 tokenizer = spacy.load("da_core_news_lg") 
 
-#test set
+#load data set
 anti_lines, pro_lines = [], []
 path = os.path.join("NLP","Detecting-Bias-in--LMs","data")
 anti_lines = load_texts(path,"anti", "both")
