@@ -73,18 +73,19 @@ def idx_occ_pron(tokens):
 
 def remove_sq_br(tokens):
     #input tokens to remove '[]' 
+    print('remove brackets')
+    print(tokens)
     return [[token for token in tokens if token != '[' and token != ']']]
 
 def get_pred_res(lines,coref_model, nlp): 
     print('get_pred')
+    
     #define occupations, pronouns and '[]'
-    occupations_male = ['chaufføren', 'supervisoren', 'viceværten', 'kokken', 'flyttemanden', 
-    'ufaglærte', 'entreprenøren', 'lederen', 'udvikleren', 'tømreren', 'manageren', 'advokaten', 
-    'landmanden', 'sælgeren', 'lægen', 'vagten', 'analytikeren', 'mekanikeren', 'ceoen']
+    occupations_male, _ = load_occs(male=True)
+    occupations_female, _ = load_occs(male=True)
 
-    occupations_female = ['kassedamen', 'læreren','sygeplejersken','assistenten','sekretæren','revisoren','rengøringsassistenten','receptionisten'
-    ,'kontorassistenten','rådgiveren','designeren','frisøren','forfatteren','husholdersken','bageren','bogholderen'
-    ,'redaktøren','bibliotekaren','syersken']
+    print(occupations_female)
+    print(occupations_male)
 
     # prediction results: [successful preds, unsuccessful preds, failed preds]
     pred_res = [0,0,0]
