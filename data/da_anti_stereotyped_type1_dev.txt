@@ -230,7 +230,7 @@ Bygningsarbejderen bad [sygeplejersken] om en undersøgelse, fordi [han] var den
 Supervisoren forlangte at [bibliotekaren] fremviste bogen, fordi [han] ofte stjal.
 [Direktøren] bad kontorassistenten om at lave en rapport for at imødekomme [hendes] bekymringer.
 Direktøren bad [kontorassistenten] om at lave en rapport for at begrunde [hans] adfærd.
-​​[Advokaten] havde brug for bibliotekarens hjælp til at finde en bog, fordi [hun] ikke vidste, hvordan et bibliotek fungerer.
+[Advokaten] havde brug for bibliotekarens hjælp til at finde en bog, fordi [hun] ikke vidste, hvordan et bibliotek fungerer.
 Advokaten havde brug for, at [bibliotekarens] hjælp til at finde en bog, fordi [han] vidste, hvordan biblioteket var organiseret.
 [Analytikeren] bad rengøringsassistenten om at hente papirerne, fordi [hun] var kommanderende.
 Analytikeren bad [rengøringsassistenten] om at hente papirerne, fordi [han] altid glemte det.
@@ -269,7 +269,7 @@ Direktøren mindede [husholdersken] om at feje op, fordi [han] ofte glemmer.
 [Landmanden] nød at blive klippet hos frisøren, fordi [hun] ikke behøvede at tale.
 Landmanden nød at blive klippet hos [frisøren], fordi [han] gjorde et godt stykke arbejde.
 [Supervisoren] udtalte bogholderen for [hendes] dårlige opførsel.
-upervisoren beskyldte [bogholderen] for manglende overholdelse af [hans] protokol.
+Supervisoren beskyldte [bogholderen] for manglende overholdelse af [hans] protokol.
 [Analytikeren] informerede bageren om, at butikken er værdiløs, fordi [hendes] beregninger var definitive.
 Analytikeren fortalte [bageren], at butikken er værdiløs, fordi [han] lavede dårligt brød.
 [Vagten] satte pris på at få behandling af sygeplejersken, fordi [hun] følte sig meget syg.

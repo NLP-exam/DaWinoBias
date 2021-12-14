@@ -5,6 +5,10 @@ from group_pronouns import group_pronouns
 from model_evaluation import evaluate_model
 import torch, os, spacy, random 
 
+#set seed 
+torch.manual_seed(3)
+
+#define model, pipeline and tokenizer
 model = "Maltehb/danish-bert-botxo"
 nlp =  pipeline(task = "fill-mask", model = model) 
 tokenizer = spacy.load("da_core_news_lg") 
@@ -34,5 +38,5 @@ anti_labels, anti_preds = group_pronouns(anti_labels),group_pronouns(anti_preds)
 pro_labels, pro_preds = group_pronouns(pro_labels),group_pronouns(pro_preds) 
 
 #evaluate performance
-print(evaluate_model(anti_labels, anti_preds, filename = 'anti_results_mlm'))
-print(evaluate_model(pro_labels, pro_preds, filename = 'pro_results_mlm'))
+evaluate_model(anti_labels, anti_preds, filename = 'results/anti_results_mlm')
+evaluate_model(pro_labels, pro_preds, filename = 'results/pro_results_mlm')
