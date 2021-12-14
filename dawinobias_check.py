@@ -1,5 +1,5 @@
 import os
-from utility_fcs import load_texts
+from utility_fcs import load_texts, load_occs
 from collections import Counter
 
 def load_occ(female=False,male=False):
@@ -36,6 +36,7 @@ def load_occ(female=False,male=False):
     all_occupations = occupations_no_poss + occupations_poss
     return all_occupations, occupations_no_poss, occupations_poss
 
+
 # load data 
 path = os.path.join("nlp","Detecting-Bias-in--LMs","data")
 anti_lines = load_texts(path,"anti", "both")
@@ -58,6 +59,11 @@ occ_dic = {occ: anti_lines.count(occ) for occ in occ_no_poss}
 occ_dic['assistenten'] = occ_dic['assistenten'] - occ_dic['kontorassistenten'] - occ_dic['rengøringsassistenten'] 
 
 # get count/percentage of how many female vs. male stereotypical occupations
-stereo_dic = {occ: anti_lines.count(occ) for occ in occ_no_poss}
+stereo_f_dic = {occ: anti_lines.count(occ) for occ in f_occ_no_poss}
+stereo_m_dic = {occ: anti_lines.count(occ) for occ in m_occ_no_poss}
+f_sum = sum(stereo_f_dic.values())
+m_sum = sum(stereo_m_dic.values())
+total = f_sum + m_sum
+print(round(f_sum/total,2),round(m_sum/total,2))
 
 # check position? 
