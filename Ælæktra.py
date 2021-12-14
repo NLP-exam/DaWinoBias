@@ -9,9 +9,7 @@ tokenizer = AutoTokenizer.from_pretrained("Maltehb/-l-ctra-danish-electra-small-
 discriminator = AutoModelForPreTraining.from_pretrained("Maltehb/-l-ctra-danish-electra-small-uncased")
 
 #define pronouns
-male_pronouns = ['hans', 'han', 'ham']
-female_pronous = ['hendes', 'hun', 'hende']
-pronouns = male_pronouns + female_pronous
+pronouns = ['hans', 'han', 'ham', 'hendes', 'hun', 'hende']
 
 #initialise results list
 results = []
@@ -71,16 +69,22 @@ for anti_line, pro_line in zip(anti_lines, pro_lines):
 dist_results = Counter(results)
 
 #calculate percentage of pro-stereotypical predictions and anti-stereotypical predictions
-print(dist_results['anti']/(dist_results['pro']+dist_results['anti']))
-print(dist_results['pro']/(dist_results['pro']+dist_results['anti']))
+anti_percentage = round(dist_results['anti']/(dist_results['pro']+dist_results['anti']), 3)
+pro_percentage = round(dist_results['pro']/(dist_results['pro']+dist_results['anti']), 3)
+
+#group pronouns
+results_pronouns = group_pronouns(results_pronouns)
 
 #Count number of times 'hun' and 'han'is predicted as most likely, respectively
-print(results_pronouns)
-results_pronouns = group_pronouns(results_pronouns)
-print(results_pronouns)
 dist_results_pronouns = Counter(results_pronouns)
-print(dist_results_pronouns)
 
-#calculate percentage of pro-stereotypical predictions and anti-stereotypical predictions
-print(dist_results_pronouns['hun/hendes']/(dist_results_pronouns['hun/hendes']+dist_results_pronouns['han/hans']))
-print(dist_results_pronouns['han/hans']/(dist_results_pronouns['hun/hendes']+dist_results_pronouns['han/hans']))
+#calculate percentage of 'hun' and 'han'is predicted as most likely, respectively
+hun_percentage = round(dist_results_pronouns['hun/hendes']/(dist_results_pronouns['hun/hendes']+dist_results_pronouns['han/hans']),3)
+han_percentage = round(dist_results_pronouns['han/hans']/(dist_results_pronouns['hun/hendes']+dist_results_pronouns['han/hans']),3)
+
+#print results
+print('anti_percentage', anti_percentage)
+print('pro_percentage', pro_percentage)
+
+print('han', han_percentage)
+print('hun', hun_percentage)

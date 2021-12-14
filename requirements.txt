@@ -1,5 +1,3 @@
 neuralcoref
 danlp[all]
 spacy==2.3.5
-transformers
-collections
