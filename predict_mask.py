@@ -13,9 +13,10 @@ def predict_masked(lines, nlp, tokenizer):
         for token in line:
             tokens.append(token.text.lower())
         
+        print(tokens)
         #find index of pronoun
         _, prons_idx = idx_occ_pron(tokens)
-
+        print('prons_idx', prons_idx)
         #remove square brackets
         tokens = remove_sq_br(tokens)[0]
 

@@ -28,7 +28,7 @@ def idx_occ_pron(tokens):
     'analytikeren', 'mekanikeren', 'direktøren','bygningsarbejderen']
     occupations_male_poss = [occ + 's' for occ in occupations_male] # possessive case
 
-    occupations_female = ['kassedamen', 'læreren','sygeplejersken','assistenten','sekretæren',
+    occupations_female = ['ekspedienten', 'læreren','sygeplejersken','assistenten','sekretæren',
     'revisoren','rengøringsassistenten','receptionisten','kontorassistenten','rådgiveren',
     'designeren','frisøren','forfatteren','husholdersken','bageren',
     'bogholderen','redaktøren','bibliotekaren','syersken']
@@ -43,7 +43,7 @@ def idx_occ_pron(tokens):
 
     #flatten occupations list
     occupations = [list for sublist in occupations for list in sublist]
-    pronouns = ['hans', 'hendes', 'han', 'hun']
+    pronouns = ['hans', 'hendes', 'han', 'hun', 'ham', 'hende']
     square_brackets = ['[']
 
     #empty lists
@@ -70,7 +70,7 @@ def idx_occ_pron(tokens):
     return [correct_cluster, incorrect_cluster], prons_idx
 
 def remove_sq_br(tokens):
-    #remove '[]'
+    #input tokens to remove '[]' 
     return [[token for token in tokens if token != '[' and token != ']']]
 
 def get_pred_res(lines,coref_model, nlp): 
