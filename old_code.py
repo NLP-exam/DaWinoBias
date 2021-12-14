@@ -33,3 +33,24 @@
     labels_total = [1 for pred in preds if pred != -1]
     preds_total = [1 if label == pred else 0 for label, pred in zip(labels, preds) if pred != -1]
 
+        #stereotypical labels
+        if tokens[0][labels[-1]] in occupations_female and preds[-1] != -1: 
+            labels_steretypical.append('stereotypical_female')
+            print('stereotypical_female')
+        elif tokens[0][labels[-1]] in occupations_male and preds[-1] != -1: 
+            labels_steretypical.append('stereotypical_male')
+            print('stereotypical_male')
+        else:
+            break
+        
+        #stereotypical predictions
+        if tokens[0][preds[-1]] in occupations_female and preds[-1] != -1: 
+            preds_steretypical.append('stereotypical_female')
+            print('stereotypical_female')
+        elif tokens[0][preds[-1]] in occupations_male and preds[-1] != -1: 
+            preds_steretypical.append('stereotypical_male')
+            print('stereotypical_male')
+        else:
+            break
+
+
