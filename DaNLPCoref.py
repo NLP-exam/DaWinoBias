@@ -3,7 +3,6 @@ from pathlib import Path
 import numpy as np
 from danlp.models import load_xlmr_coref_model
 from utility_fcs import idx_occ_pron, remove_sq_br, load_texts, load_occs
-from get_preds import get_pred_res
 from model_evaluation import evaluate_model
 
 # load the coreference model

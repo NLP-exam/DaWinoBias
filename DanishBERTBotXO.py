@@ -6,7 +6,6 @@ from model_evaluation import evaluate_model
 import torch, os, spacy, random 
 
 #set seed 
-# whnat is up
 torch.manual_seed(3)
 
 #define model, pipeline and tokenizer
