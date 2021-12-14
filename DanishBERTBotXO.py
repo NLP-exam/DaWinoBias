@@ -15,9 +15,9 @@ tokenizer = spacy.load("da_core_news_lg")
 
 #load data set
 anti_lines, pro_lines = [], []
-path = os.path.join("nlp","Detecting-Bias-in--LMs","data")
-anti_lines = load_texts(path,"anti", "both")
-pro_lines = load_texts(path,"pro", "both")
+path = os.path.join('data')
+anti_lines = load_texts(path,'anti','both')
+pro_lines = load_texts(path,'pro', 'both')
 
 # flatten lists
 anti_lines = [sentence for sublist in anti_lines for sentence in sublist]
