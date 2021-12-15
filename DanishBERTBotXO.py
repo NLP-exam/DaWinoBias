@@ -1,5 +1,5 @@
 from transformers import AutoTokenizer, AutoModelForPreTraining, AutoModelForMaskedLM, pipeline
-from utility_fcs import idx_occ_pron, remove_sq_br, load_texts, get_pred_res
+from utility_fcs import idx_occ_pron, remove_sq_br, load_texts
 from predict_mask import predict_masked
 from group_pronouns import group_pronouns
 from model_evaluation import evaluate_model
@@ -26,8 +26,6 @@ pro_lines = [sentence for sublist in pro_lines for sentence in sublist]
 # randomize data 
 random.shuffle(anti_lines)
 random.shuffle(pro_lines)
-print(anti_lines)
-print(pro_lines)
 
 #mask and predict pronoun 
 anti_labels, anti_preds = predict_masked(lines = anti_lines, nlp = nlp, tokenizer = tokenizer)
