@@ -1,6 +1,9 @@
 import os
 from pathlib import Path
 
+def get_pred_res():
+    pass
+
 def load_texts(path,condition,dev_test):
     lines = []
     if condition == 'anti': 
@@ -70,7 +73,7 @@ def load_occs(female=False,male=False):
     if female:
         occupations_female = ['ekspedienten', 'læreren','sygeplejersken','assistenten','sekretæren',
         'revisoren','rengøringsassistenten','receptionisten','kontorassistenten','rådgiveren',
-        'designeren','frisøren','forfatteren','husholdersken','bageren',
+        'designeren','frisøren','skribenten','husholdersken','bageren',
         'bogholderen','redaktøren','bibliotekaren','syersken']
         occupations_female_poss = [occ + 's' for occ in occupations_female] # possessive case
 
