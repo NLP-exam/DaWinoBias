@@ -1,4 +1,5 @@
-from utility_fcs import idx_occ_pron, remove_sq_br, load_texts, get_pred_res
+from utility_functions.idx_occupations_pronoun import idx_occ_pron
+from utility_functions.remove_square_brackets import remove_sq_br
 
 def predict_masked(lines, nlp, tokenizer): 
     #initialize predictions and labels 

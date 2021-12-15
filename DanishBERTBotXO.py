@@ -1,9 +1,12 @@
 from transformers import AutoTokenizer, AutoModelForPreTraining, AutoModelForMaskedLM, pipeline
-from utility_fcs import idx_occ_pron, remove_sq_br, load_texts
-from predict_mask import predict_masked
-from group_pronouns import group_pronouns
-from model_evaluation import evaluate_model
 import torch, os, spacy, random 
+
+from utility_functions.idx_occupations_pronoun import idx_occ_pron
+from utility_functions.remove_square_brackets import remove_sq_br
+from utility_functions.load_data import load_texts
+from utility_functions.predict_mask import predict_masked
+from utility_functions.group_pronouns import group_pronouns
+from utility_functions.model_evaluation import evaluate_model
 
 #set seed 
 torch.manual_seed(3)
