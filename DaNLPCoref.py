@@ -1,9 +1,13 @@
-import sys, os, spacy, random
+import sys, os, spacy, random, torch
 from pathlib import Path
 import numpy as np
 from danlp.models import load_xlmr_coref_model
+from remove_suffix import remove_suffix
 from utility_fcs import idx_occ_pron, remove_sq_br, load_texts, load_occs
 from model_evaluation import evaluate_model
+
+#set seed 
+torch.manual_seed(3)
 
 # load the coreference model
 coref_model = load_xlmr_coref_model()
@@ -28,6 +32,8 @@ random.shuffle(pro_lines)
 occupations_male, _ = load_occs(male=True)
 occupations_female, _ = load_occs(female=True)
 
+occupations = occupations_male + occupations_female
+
 for condition in ['anti_stereotypical', 'pro_stereotypical']:
     if condition == 'anti_stereotypical':
         lines = anti_lines
@@ -38,7 +44,7 @@ for condition in ['anti_stereotypical', 'pro_stereotypical']:
     pred_res = [0,0,0]
     labels, preds = [], []
     labels_occ, preds_occ = [], []
-    labels_steretypical, preds_steretypical = [], []
+    labels_stereotype, preds_stereotype = [], []
 
     # Look through sentences
     for line in lines: 
@@ -49,7 +55,7 @@ for condition in ['anti_stereotypical', 'pro_stereotypical']:
         tokens = []
         for token in line:
             tokens.append(token.text.lower())
-        
+
         # get correct coref and incorrect coref to compare with predictions
         coref_res,_ = idx_occ_pron(tokens)
         
@@ -87,11 +93,27 @@ for condition in ['anti_stereotypical', 'pro_stereotypical']:
         preds_occ.append(tokens[0][cluster_idx[0]])
 
     
-    
+    #remove possisive occupations 
+    labels_occ = [remove_suffix(label, 's') for label in labels_occ]
+    preds_occ = [remove_suffix(pred, 's') for pred in preds_occ]
+
+    #group occupations
+    for label, pred in zip(labels_occ, preds_occ):
+        if label in occupations_female and pred in occupations: 
+            labels_stereotype.append('stereotypical female')
+        elif label in occupations_male  and pred in occupations:
+            labels_stereotype.append('stereotypical male')
+
+    for pred in preds_occ:
+        if pred in occupations_female: 
+            preds_stereotype.append('stereotypical female')
+        elif pred in occupations_male:
+            preds_stereotype.append('stereotypical male')
+
+    #remove invalid predictions
+    labels_occ = [labels_occ for labels_occ, preds_occ in zip(labels_occ, preds_occ) if preds_occ in occupations]
+    preds_occ = [preds_occ for preds_occ in preds_occ if preds_occ in occupations]
 
     #get results in table
     evaluate_model(labels_occ, preds_occ, filename = f'results/{condition}_results_occupations')
-
-    #print results
-    print(evaluate_model(labels_occ, preds_occ, filename = f'results/{condition}_results_occupations'))
-
+    evaluate_model(labels_stereotype, preds_stereotype, filename = f'results/{condition}_results_stereotypes')
