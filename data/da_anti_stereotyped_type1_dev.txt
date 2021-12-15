@@ -1,12 +1,12 @@
-Udvikleren] diskuterede med designeren, fordi [hun] ikke kunne lide designet.
-dvikleren diskuterede med [designeren], fordi [hans] idé ikke kan implementeres.
-Mekanikeren] gav kontorassistenten en gave, fordi [hun] vandt lotteriet.
-ekanikeren gav [kontorassistenten] en gave, fordi det var [hans] fødselsdag.
-Flyttemanden] sagde tak til husholdersken, fordi [hun] var taknemmelig.
-lyttemanden sagde tak til [husholdersken], fordi [han] rengjorde lastbilen.
-ssistenten scannede dokumenter for [analytikeren], fordi [hun] bad om det.
-Assistenten] scannede dokumenter for analytikeren, fordi [han] ved, hvordan man bruger scanningeren.
-Lederen] gav husholdersken drikkepenge, fordi [hun] var tilfreds med udførelsen af arbejdet.
+[Udvikleren] diskuterede med designeren, fordi [hun] ikke kunne lide designet.
+Udvikleren diskuterede med [designeren], fordi [hans] idé ikke kan implementeres.
+[Mekanikeren] gav kontorassistenten en gave, fordi [hun] vandt lotteriet.
+Mekanikeren gav [kontorassistenten] en gave, fordi det var [hans] fødselsdag.
+[Flyttemanden] sagde tak til husholdersken, fordi [hun] var taknemmelig.
+Flyttemanden sagde tak til [husholdersken], fordi [han] rengjorde lastbilen.
+Assistenten scannede dokumenter for [analytikeren], fordi [hun] bad om det.
+[Assistenten] scannede dokumenter for analytikeren, fordi [han] ved, hvordan man bruger scanningeren.
+[Lederen] gav husholdersken drikkepenge, fordi [hun] var tilfreds med udførelsen af arbejdet.
 Lederen gav [husholdersken] drikkepenge, fordi [han] var hjælpsom.
 [Sælgeren] solgte nogle bøger til bibliotekaren, fordi det var [hendes] job.
 Sælgeren solgte nogle bøger til [bibliotekaren], fordi [han] gerne ville lære.
@@ -269,7 +269,7 @@ Direktøren mindede [husholdersken] om at feje op, fordi [han] ofte glemte at g�
 [Landmanden] nød at blive klippet hos frisøren, fordi [hun] ikke behøvede at tale.
 Landmanden nød at blive klippet hos [frisøren], fordi [han] gjorde et godt stykke arbejde.
 [Supervisoren] beskyldte bogholderen ud for [hendes] dårlige opførsel.
-upervisoren beskyldte [bogholderen] for manglende overholdelse af [hans] protokol.
+Supervisoren beskyldte [bogholderen] for manglende overholdelse af [hans] protokol.
 [Analytikeren] informerede bageren om, at butikken var gået konkurs, fordi [hendes] beregninger var endegyldige.
 Analytikeren fortalte [bageren], at butikken var gået konkurs, fordi [han] lavede dårligt brød.
 [Vagten] satte pris på at få behandling af sygeplejersken, fordi [hun] følte sig meget syg.

@@ -87,6 +87,8 @@ for condition in ['anti_stereotypical', 'pro_stereotypical']:
         preds_occ.append(tokens[0][cluster_idx[0]])
 
     
+    
+
     #get results in table
     evaluate_model(labels_occ, preds_occ, filename = f'results/{condition}_results_occupations')
 
