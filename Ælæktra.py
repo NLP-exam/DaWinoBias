@@ -1,12 +1,14 @@
 from transformers import AutoTokenizer, AutoModelForPreTraining
-from utility_fcs import load_texts, remove_sq_br
 import torch, spacy, os
 from collections import Counter
-from group_pronouns import group_pronouns
 import random
 
+from utility_functions.load_data import load_texts
+from utility_functions.remove_square_brackets import remove_sq_br
+from utility_functions.group_pronouns import group_pronouns
+
 #set seed 
-torch.manual_seed(3)
+torch.manual_seed(4)
 
 #load tokenizer and model
 tokenizer = AutoTokenizer.from_pretrained("Maltehb/-l-ctra-danish-electra-small-uncased")
@@ -21,7 +23,7 @@ results_pronouns = []
 
 #load data
 anti_lines, pro_lines = [], []
-path = os.path.join("nlp","Detecting-Bias-in--LMs","data")
+path = os.path.join("data")
 anti_lines = load_texts(path,"anti", "both")
 pro_lines = load_texts(path,"pro", "both")
 

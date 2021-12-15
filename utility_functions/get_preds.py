@@ -1,4 +1,8 @@
-from utility_fcs import idx_occ_pron, remove_sq_br
+import os
+from pathlib import Path
+
+from utility_functions.idx_occupations_pronoun import idx_occ_pron
+from utility_functions.remove_square_brackets import remove_sq_br
 
 def get_pred_res(lines,coref_model, nlp): 
     occupations_male = ['chaufføren', 'supervisoren', 'viceværten', 'kokken', 'flyttemanden', 

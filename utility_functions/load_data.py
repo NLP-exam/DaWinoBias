@@ -1,10 +1,15 @@
+"""Contains two functions: load_texts and load_occs
+load_texts: Load DaWinoBias texts 
+load_occ: Load occupations
+"""
+
 import os
 from pathlib import Path
 
-def get_pred_res():
-    pass
-
 def load_texts(path,condition,dev_test):
+    """load DaWinoBias texts 
+    """    
+
     lines = []
     if condition == 'anti': 
         file_condition = 'da_anti_'
@@ -23,45 +28,16 @@ def load_texts(path,condition,dev_test):
             lines.append([line.rstrip() for line in text])
     return lines
 
-def idx_occ_pron(tokens):
-    #define occupations
-    occupations, _ = load_occs(female = True, male=True)
-
-    #define pronouns
-    pronouns = ['hans', 'hendes', 'han', 'hun', 'ham', 'hende']
-
-    #define square brackets
-    square_brackets = ['[']
-
-    #empty lists
-    occ_idx, sq_idx, prons_idx = [], [], []
-
-    #find idx of pronouns 
-    prons_idx = [[tokens.index(i) for i in pronouns if i in tokens][0] -3][0]
-
-    #find correct referenced occupation in string
-    sq_idx = [tokens.index(i) for i in square_brackets if i in tokens][0]
-
-    #remove square brackets
-    tokens = remove_sq_br(tokens)[0]
-    
-    #Find idx of occupations
-    occ_idx = [tokens.index(token) for token in tokens if token in occupations]
-
-    #find the incorrect referenced occupations in string
-    occ_idx.remove(sq_idx)
-
-    #save correct and incorrect answer
-    correct_cluster = [sq_idx, prons_idx]
-    incorrect_cluster = [occ_idx[0], prons_idx]
-    return [correct_cluster, incorrect_cluster], prons_idx
-
-def remove_sq_br(tokens):
-    #input tokens to remove '[]' 
-    return [[token for token in tokens if token != '[' and token != ']']]
-
-
 def load_occs(female=False,male=False):
+    """Load occupations
+
+    Keyword Arguments:
+        female {bool} -- [Whether to include occupations that defined as stereotypically female] (default: {False})
+        male {bool} -- [Whether to include occupations that defined as stereotypically female] (default: {False})
+
+    Returns:
+        [Two lists] -- [One list with all occupations, one list with occupations excluding the possessive case]
+    """    
     all_occupations, occupations_no_poss, occupations_poss = [], [], []
     if male:
         occupations_male = ['chaufføren', 'supervisoren', 'viceværten', 'kokken', 'flyttemanden', 
