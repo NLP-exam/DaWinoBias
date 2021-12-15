@@ -36,7 +36,7 @@ m_sum = sum(stereo_m_dic.values())
 total = f_sum + m_sum
 
 print("% female and male stereotypical occupations in DaWinoBias")
-print(round(f_sum/total,2),round(m_sum/total,2))
+print(round(f_sum/total,3),round(m_sum/total,3))
 
 # Position check
 pos_0=''
@@ -63,4 +63,4 @@ m_sum = sum(stereo_m_dic.values())
 total = f_sum + m_sum
 
 print("% stereotypical female and male occupations that are the first element in the sentences")
-print(round(f_sum/total,2),round(m_sum/total,2))
+print(round(f_sum/total,3),round(m_sum/total,3))
