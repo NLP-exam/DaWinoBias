@@ -4,6 +4,7 @@ import numpy as np
 from danlp.models import load_xlmr_coref_model
 from utility_fcs import idx_occ_pron, remove_sq_br, load_texts, load_occs
 from get_preds import get_pred_res
+from remove_suffix import remove_suffix
 from model_evaluation import evaluate_model
 
 # load the coreference model
@@ -84,6 +85,10 @@ for condition in ['anti_stereotypical', 'pro_stereotypical']:
         preds_occ.append(tokens[0][cluster_idx[0]])
 
     
+    #group occupations 
+    labels_occ_grouped = [remove_suffix(label, 's') for label in labels_occ]
+    print(labels_occ_grouped)
+
     #get results in table
     evaluate_model(labels_occ, preds_occ, filename = f'results/{condition}_results_occupations')
 
