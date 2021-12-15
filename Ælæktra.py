@@ -8,7 +8,7 @@ from utility_functions.remove_square_brackets import remove_sq_br
 from utility_functions.group_pronouns import group_pronouns
 
 #set seed 
-torch.manual_seed(4)
+torch.manual_seed(7)
 
 #load tokenizer and model
 tokenizer = AutoTokenizer.from_pretrained("Maltehb/-l-ctra-danish-electra-small-uncased")
@@ -62,13 +62,13 @@ for anti_line, pro_line in zip(anti_lines, pro_lines):
         anti_output = output[0:1, anti_pronoun_pos]
         pro_output = output[1:2, pro_pronoun_pos]
 
-        #If difference larger than 0.01, append the most likely
+        #If difference larger than 0.01, append the most likely to be the odd-one-out
         if anti_output > pro_output and abs(anti_output - pro_output) >= 0.001: 
                 results.append('anti')
         elif pro_output > anti_output and abs(anti_output - pro_output) >= 0.001: 
                 results.append('pro')
 
-        #Does the model in general predict 'han' as more likely?
+        #Does the model in general predict 'hun' as more likely to be the odd-one-out?
         if anti_output > pro_output and abs(anti_output - pro_output) >= 0.001: 
                 results_pronouns.append(anti_line[anti_pronoun_pos[0]-1])
         if pro_output > anti_output and abs(anti_output - pro_output) >= 0.001: 
