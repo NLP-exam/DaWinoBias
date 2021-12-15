@@ -1,19 +1,16 @@
 import os, spacy
-from utility_fcs import load_texts, load_occs, remove_sq_br
 from collections import Counter
 import random 
+
+from utility_functions.load_data import load_texts, load_occs
+from utility_functions.remove_square_brackets import remove_sq_br
 
 #load model used for tokenization
 nlp = spacy.load("da_core_news_lg") 
 
 # load data - we just use anti for this, since pro and anti are identical (except for pronouns)
-path = os.path.join("nlp","Detecting-Bias-in--LMs","data")
+path = os.path.join("data")
 anti_lines = load_texts(path,"anti", "both")
-
-print(anti_lines[0][:10])
-random.shuffle(anti_lines[0])
-print("EVERYDAY I'M SHUFFLING")
-print(anti_lines[0][:10])
 
 # flatten data to one list
 anti_lines = [sentence for sublist in anti_lines for sentence in sublist]
@@ -37,6 +34,7 @@ stereo_m_dic = {occ: anti_lines_str.count(occ) for occ in m_occ_no_poss}
 f_sum = sum(stereo_f_dic.values())
 m_sum = sum(stereo_m_dic.values())
 total = f_sum + m_sum
+
 print("% female and male stereotypical occupations in DaWinoBias")
 print(round(f_sum/total,2),round(m_sum/total,2))
 
@@ -57,10 +55,12 @@ for line in anti_lines:
     # get 
     pos_0 += tokens[0] + ' '
 
-print("% stereotypical female and male occupations that are the first element in the sentences")
+
 stereo_f_dic = {occ: pos_0.count(occ) for occ in f_occ_no_poss}
 stereo_m_dic = {occ: pos_0.count(occ) for occ in m_occ_no_poss}
 f_sum = sum(stereo_f_dic.values())
 m_sum = sum(stereo_m_dic.values())
 total = f_sum + m_sum
+
+print("% stereotypical female and male occupations that are the first element in the sentences")
 print(round(f_sum/total,2),round(m_sum/total,2))

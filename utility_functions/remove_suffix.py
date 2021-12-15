@@ -26,6 +26,3 @@ def remove_suffix(path, suffix) -> str:
         basename = "".join(word_split[:-1])
         path = os.path.join(directory, basename + ext)
     return path 
-
-text = 'håndværkerens'
-print(remove_suffix(text, 's'))

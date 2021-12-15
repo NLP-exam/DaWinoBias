@@ -2,9 +2,12 @@ import sys, os, spacy, random, torch
 from pathlib import Path
 import numpy as np
 from danlp.models import load_xlmr_coref_model
-from remove_suffix import remove_suffix
-from utility_fcs import idx_occ_pron, remove_sq_br, load_texts, load_occs
-from model_evaluation import evaluate_model
+
+from utility_functions.remove_suffix import remove_suffix
+from utility_functions.remove_square_brackets import remove_sq_br
+from utility_functions.idx_occupations_pronoun import idx_occ_pron
+from utility_functions.load_data import load_texts, load_occs
+from utility_functions.model_evaluation import evaluate_model
 
 #set seed 
 torch.manual_seed(3)
