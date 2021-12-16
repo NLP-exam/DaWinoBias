@@ -10,7 +10,8 @@ from utility_functions.load_data import load_texts, load_occs
 from utility_functions.model_evaluation import evaluate_model
 
 #set seed 
-torch.manual_seed(9)
+seed = 21
+torch.manual_seed(seed)
 
 # load the coreference model
 coref_model = load_xlmr_coref_model()
@@ -118,5 +119,9 @@ for condition in ['anti_stereotypical', 'pro_stereotypical']:
     preds_occ = [preds_occ for preds_occ in preds_occ if preds_occ in occupations]
 
     #get results in table
-    evaluate_model(labels_occ, preds_occ, filename = f'results/{condition}_results_occupations')
-    evaluate_model(labels_stereotype, preds_stereotype, filename = f'results/{condition}_results_stereotypes')
+    evaluate_model(labels_occ, preds_occ, filename = f'results/danlp_coref_{seed}_{condition}_occupations')
+    evaluate_model(labels_stereotype, preds_stereotype, filename = f'results/danlp_coref_{condition}_stereotypes')
+
+    #print results
+    print(evaluate_model(labels_occ, preds_occ, filename = f'results/danlp_coref_{seed}_{condition}_occupations'))
+    print(evaluate_model(labels_stereotype, preds_stereotype, filename = f'results/danlp_coref_{seed}_{condition}_stereotypes'))
