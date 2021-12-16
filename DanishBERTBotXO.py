@@ -1,5 +1,6 @@
 from transformers import AutoTokenizer, AutoModelForPreTraining, AutoModelForMaskedLM, pipeline
 import torch, os, spacy, random 
+from collections import Counter
 
 from utility_functions.idx_occupations_pronoun import idx_occ_pron
 from utility_functions.remove_square_brackets import remove_sq_br
@@ -37,6 +38,13 @@ pro_labels, pro_preds = predict_masked(lines = pro_lines, nlp = nlp, tokenizer =
 #group pronouns
 anti_labels, anti_preds = group_pronouns(anti_labels),group_pronouns(anti_preds) 
 pro_labels, pro_preds = group_pronouns(pro_labels),group_pronouns(pro_preds) 
+
+#count number of pronoun predictions
+anti_count_pronouns = Counter(anti_preds)
+pro_count_pronouns = Counter(pro_preds)
+
+print('anti_count_pronouns', anti_count_pronouns)
+print('pro_count_pronouns', pro_count_pronouns)
 
 #evaluate performance
 evaluate_model(anti_labels, anti_preds, filename = 'results/anti_results_mlm')
