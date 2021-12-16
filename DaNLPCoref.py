@@ -10,7 +10,7 @@ from utility_functions.load_data import load_texts, load_occs
 from utility_functions.model_evaluation import evaluate_model
 
 #set seed 
-torch.manual_seed(3)
+torch.manual_seed(9)
 
 # load the coreference model
 coref_model = load_xlmr_coref_model()
