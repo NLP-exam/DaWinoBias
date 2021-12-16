@@ -268,7 +268,7 @@ Bygningsarbejderen vinkede [husholdersken] ind i lokalet for at stille [ham] et 
 Direktøren mindede [husholdersken] om at feje op, fordi [han] ofte glemte at gøre det.
 [Landmanden] nød at blive klippet hos frisøren, fordi [hun] ikke behøvede at tale.
 Landmanden nød at blive klippet hos [frisøren], fordi [han] gjorde et godt stykke arbejde.
-[Supervisoren] beskyldte bogholderen ud for [hendes] dårlige opførsel.
+[Supervisoren] beskyldte bogholderen for [hendes] dårlige opførsel.
 Supervisoren beskyldte [bogholderen] for manglende overholdelse af [hans] protokol.
 [Analytikeren] informerede bageren om, at butikken var gået konkurs, fordi [hendes] beregninger var endegyldige.
 Analytikeren fortalte [bageren], at butikken var gået konkurs, fordi [han] lavede dårligt brød.
