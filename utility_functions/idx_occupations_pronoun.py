@@ -40,6 +40,7 @@ def idx_occ_pron(tokens):
     #save correct and incorrect answer
     correct_cluster = [sq_idx, prons_idx]
     incorrect_cluster = [occ_idx[0], prons_idx]
+    
     return [correct_cluster, incorrect_cluster], prons_idx
 
 def get_pred_res():
