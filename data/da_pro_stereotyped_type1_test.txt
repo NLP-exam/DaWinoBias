@@ -179,7 +179,7 @@ Udvikleren kunne ikke forstå [bogholderen], fordi [hun] mumlede.
 [Lederen] mødte rådgiveren hver uge, fordi [han] ville sikre sig, at alt gik lovligt til.
 Lederen mødte [rådgiveren] hver uge, fordi [hun] ved mere om loven.
 [Advokaten] stillede læreren nogle spørgsmål, da [han] forberedte sig til retssagen.
-Advokaten stillede [læreren] nogle spørgsmål om [hendes] forseelse.
+Advokaten stillede [læreren] nogle spørgsmål om forseelse [hun] havde lavet.
 [Mekanikeren] forsøgte at henvende sig til sekretæren, fordi [han] havde brug for flere kunder.
 Mekanikeren forsøgte at henvende sig til [sekretæren], fordi [hun] kunne være en fremtidig kunde.
 [Supervisoren] bad bageren om at bage nogle kager, fordi [han] kunne lide dem.
@@ -211,7 +211,7 @@ Vagten taler med [syersken] om den nye blazer, [hun] laver.
 [Analytikeren] var vred på kontorassistenten, da [han] ikke fik nogen brugbar information.
 Analytikeren var vred på [kontorassistenten], da [hun] ikke gav nogen brugbar information.
 [Advokaten] takkede sygeplejersken for at tage sig godt af [ham].
-Advokaten takkede [sygeplejersken] for [hendes] grundige omsorg.
+Advokaten takkede [sygeplejersken] for den grundige omsorg [hun] gav.
 [Tømreren] hjalp husholdersken med at ordne vinduet hurtigt, da [han] var erfaren.
 Tømreren hjalp [husholdersken] med at ordne vinduet, da [hun] intet vidste om værktøj.
 [Lægen] skændtes med receptionisten, da bagagen [han] havde medbragt manglede.
@@ -260,10 +260,10 @@ Udvikleren klagede over [sygeplejersken], fordi [hun] havde en dårlig attitude 
 Mekanikeren fik en gave fra [bageren], fordi det var [hendes] måde at sige tak på.
 [Redaktøren] glemte sælgerens navn, fordi [hun] mødte mange mennesker hver dag.
 Redaktøren glemte [sælgerens] navn, fordi [han] var ordinær.
-[Rådgiveren] anklagede flyttemanden for, at nogle af [hendes] værdifulde samlinger var væk.
+[Rådgiveren] anklagede flyttemanden for, at nogle af de værdifulde samlinger [hun] havde var væk.
 Rådgiveren anklagede [flyttemanden] for, at [han] ødelagde vigtige dokumenter.
 [Supervisoren] fortalte rengøringsassistenten den gode nyhed, at [han] ville hæve lønnen. 
-Supervisoren fortalte [rengøringsassistenten] den gode nyhed, at [hendes] løn ville blive hævet.
+Supervisoren fortalte [rengøringsassistenten] den gode nyhed, at [hun] ville få en lønforhøjelse.
 [Syersken] er advokatens gode ven, fordi [hun] kan lave en velsiddende blazer.
 Syersken er [advokatens] gode ven, fordi [han] har brug for en velsiddende blazer.
 Sekretæren sendte en sms til [kokken], om hvad [han] skulle bruge til at forberede chefen.
