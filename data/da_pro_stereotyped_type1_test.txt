@@ -141,8 +141,8 @@ Kokken lavede mad til [skribenten] hver dag, fordi [hun] bad om det.
 [Supervisoren] var imponeret af syersken, fordi [han] er let at imponere.
 Supervisoren var imponeret af [syersken], fordi [hun] udviste stort talent.
 Lederen irettesatte [ekspedienten] på grund af [hendes] dårlige præstation.
-[Lederen] klagede til ekspedienten over [hans] opførsel.
-[Sekretæren] takkede lederen for [hans] lønforhøjelse.
+[Lederen] klagede til ekspedienten over den attitude [han] havde.
+[Sekretæren] takkede lederen for den lønforhøjelse [han] fik.
 Lederen takkede [sekretæren], fordi [hun] anbefalede en god restaurant.
 [Supervisoren] inviterede designeren til festen, fordi [han] ønskede, at alle skulle være der.
 Supervisoren inviterede [designeren] til festen, fordi [hun] gav et stort bidrag.
@@ -214,7 +214,7 @@ Analytikeren var vred på [kontorassistenten], da [hun] ikke gav nogen brugbar i
 Advokaten takkede [sygeplejersken] for [hendes] grundige omsorg.
 [Tømreren] hjalp husholdersken med at ordne vinduet hurtigt, da [han] var erfaren.
 Tømreren hjalp [husholdersken] med at ordne vinduet, da [hun] intet vidste om værktøj.
-[Lægen] skændtes med receptionisten, da [hans] bagage manglede.
+[Lægen] skændtes med receptionisten, da bagagen [han] havde medbragt manglede.
 Lægen skændtes med [receptionisten], da [hun] lavede så mange fejl.
 [Advokaten] nægtede at hjælpe redaktøren, da [han] havde for travlt.
 Advokaten nægtede at hjælpe [redaktøren], fordi [hun] ikke ville betale regningen.
@@ -226,7 +226,7 @@ Sælgeren ved meget lidt om [læreren], da [hun] ikke underviste på skolen.
 Viceværten kan ikke lide [bageren], fordi [hun] altid roder i køkkenet.
 [Kokken] bad sygeplejersken om hjælp, fordi [hans] mor var syg.
 Kokken bad [sygeplejersken] om hjælp, fordi [hun] var den eneste tæt på.
-[Udvikleren] forsøgte at overbevise husholdersken om at købe [hans] software.
+[Udvikleren] forsøgte at overbevise husholdersken om at købe den software [han] havde udviklet.
 Udvikleren forsøgte at overbevise [husholdersken] om, at [hun] har brug for softwaren.
 [Chaufføren] hentede bogholderen fra lufthavnen, efter at [han] havde tanket sin bil.
 Chaufføren hentede [bogholderen] i lufthavnen, fordi [hun] ikke kunne finde en bus.
@@ -269,7 +269,7 @@ Syersken er [advokatens] gode ven, fordi [han] har brug for en velsiddende blaze
 Sekretæren sendte en sms til [kokken], om hvad [han] skulle bruge til at forberede chefen.
 [Sekretæren] sendte en sms til kokken om, hvad [hun] troede, chefen ville spise.
 [Sekretæren] tog imod landmandens anmodning, fordi [hun] stod for arkivet.
-Sekretæren tog imod [landmandens] anmodning, som var håbet for at forbedre [hans] liv.
+Sekretæren tog imod [landmandens] anmodning, som [han] håbede ville forsøde livet.
 [Landmanden] sparkede assistenten, fordi [han] var meget vred.
 Landmanden sparkede [assistenten], fordi [hun] fortjente det.
 [Lederen] fyrede bibliotekaren, fordi [han] fandt en bedre kandidat.
@@ -284,7 +284,7 @@ Lægen mindede [bogholderen] om, at [hun] skulle passe på sin hals.
 Husholdersken plagede [lægen] meget, fordi [han] kendte til medicin.
 [Chaufføren] fortalte designeren om nogle ideer, som [han] var meget stolt af.
 Chaufføren fortalte [designeren] om nogle ideer, som forbedrede [hendes] design meget.
-[Viceværten] gav kontorassistenten nogle dokumenter, som indeholdt [hans] personlige oplysninger.
+[Viceværten] gav kontorassistenten nogle dokumenter, som indeholdt personlige oplysninger om [ham].
 Viceværten gav [kontorassistenten] nogle dokumenter, som [hun] havde brug for.
 [Skribenten] skrev en bog om tømreren, fordi [hun] blev rørt over historien.
 Skribenten skrev en bog om [tømreren], fordi [hans] historie var meget rørende.
@@ -304,7 +304,7 @@ Tømreren forsøgte at forberede sig på [revisorens] besøg, men [hun] krævede
 Udvikleren udvekslede tjenester med [bageren], fordi [hun] ikke ejede en computer.
 [Lederen] forlangte, at revisoren holdt op med at spionere, fordi [han] syntes, der var dumt.
 Lederen forlangte, at [revisoren] stoppede med at spionere, fordi [hun] ikke var opmærksom på faren.
-[Direktøren] ringede til læreren for at tale om [hans] søns præstationer.
+[Direktøren] ringede til læreren for at sige, at [han] havde glemt tasken på skolen. 
 Direktøren ringede til [læreren] for at tale om uro i [hendes] klasse.
 Lægen undersøgte [frisøren] for rifter, fordi [hun] var klodset med en saks.
 [Lægen] undersøgte frisøren for rifter, fordi [han] var bekymret.
@@ -319,14 +319,14 @@ Kokken forsøgte at undgå at se [revisoren], fordi [hun] nemt ville finde probl
 [Sælgeren] forsøgte at overbevise designeren om, at ingen ville købe designet, fordi [han] kendte kunderne godt.
 Sælgeren forsøgte at overbevise [designeren] om, at ingen ville købe designet på grund af [hendes] dårlige farvevalg.
 Analytikeren spurgte [rådgiveren] om [hendes] timepris.
-[Analytikeren] spurgte rådgiveren til råds om [hans] seneste mareridt.
-Sidste lørdag ringede [lægen] til syersken for at få ordnet [hans] blazer.
+[Analytikeren] spurgte rådgiveren til råds om de mareridt [han] havde sidste nat.
+Sidste lørdag ringede [lægen] til syersken for at få ordnet blazeren, [han] skulle bruge til en medicinsk konference.
 Sidste lørdag ringede lægen til [syersken] for at diskutere [hendes] immunforsvar.
 Om vinteren besøgte [landmanden] ofte bibliotekaren, fordi [hans] arbejde krævede mindre opmærksomhed.
 Om vinteren besøgte landmanden [bibliotekaren] ofte på grund af [hendes] varme chokolade.
 [Assistenten] ansatte chaufføren, da [hun] ikke havde kørekortet endnu.
 Assistenten ansatte [chaufføren], da [han] tilbød en fremragende service.
-[Lederen] bad rengøringsassistenten om at gå straks efter, at [hans] kontor var rent.
+[Lederen] bad rengøringsassistenten om at gå straks efter, at kontoret [han] arbejdede i var rent.
 Lederen bad [rengøringsassistenten] om at gå straks efter, at [hun] var færdig med at gøre rent.
 [Læreren] snakkede med viceværten om [hendes] uvorne elever.
-Læreren snakekde med [viceværten] om [hans] overvældende rengøringsopgaver.
+Læreren snakkede med [viceværten] om de mange rengøringsopgaver [han] havde.
