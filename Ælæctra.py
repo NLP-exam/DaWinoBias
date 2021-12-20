@@ -11,8 +11,8 @@ from utility_functions.group_pronouns import group_pronouns
 torch.manual_seed(7)
 
 #load tokenizer and model
-tokenizer = AutoTokenizer.from_pretrained("Maltehb/-l-ctra-danish-electra-small-uncased")
-discriminator = AutoModelForPreTraining.from_pretrained("Maltehb/-l-ctra-danish-electra-small-uncased")
+tokenizer = AutoTokenizer.from_pretrained("Maltehb/aelaectra-danish-electra-small-uncased")
+discriminator = AutoModelForPreTraining.from_pretrained("Maltehb/aelaectra-danish-electra-small-uncased")
 
 #define pronouns
 pronouns = ['hans', 'han', 'ham', 'hendes', 'hun', 'hende']
@@ -67,6 +67,8 @@ for anti_line, pro_line in zip(anti_lines, pro_lines):
                 results.append('anti')
         elif pro_output > anti_output and abs(anti_output - pro_output) >= 0.001: 
                 results.append('pro')
+        else: 
+                results.append('neither')
 
         #Does the model in general predict 'hun' as more likely to be the odd-one-out?
         if anti_output > pro_output and abs(anti_output - pro_output) >= 0.001: 
@@ -77,25 +79,26 @@ for anti_line, pro_line in zip(anti_lines, pro_lines):
 
 #Count number of pro-stereotypical vs. anti-stereotypical
 dist_results = Counter(results)
-print(dist_results)
 
 #calculate percentage of pro-stereotypical predictions and anti-stereotypical predictions
-anti_percentage = round(dist_results['anti']/(dist_results['pro']+dist_results['anti']), 3)
-pro_percentage = round(dist_results['pro']/(dist_results['pro']+dist_results['anti']), 3)
-
+anti_percentage = round(dist_results['anti']/(dist_results['pro']+dist_results['anti']+dist_results['neither']), 3)
+pro_percentage = round(dist_results['pro']/(dist_results['pro']+dist_results['anti']+dist_results['neither']), 3)
+neither_percentage = round(dist_results['neither']/(dist_results['pro']+dist_results['anti']+dist_results['neither']), 3)
 #group pronouns
 results_pronouns = group_pronouns(results_pronouns)
 
 #Count number of times 'hun' and 'han'is predicted as most likely, respectively
 dist_results_pronouns = Counter(results_pronouns)
-print(dist_results_pronouns)
 #calculate percentage of 'hun' and 'han'is predicted as most likely, respectively
 hun_percentage = round(dist_results_pronouns['hun/hendes']/(dist_results_pronouns['hun/hendes']+dist_results_pronouns['han/hans']),3)
 han_percentage = round(dist_results_pronouns['han/hans']/(dist_results_pronouns['hun/hendes']+dist_results_pronouns['han/hans']),3)
 
 #print results
-print('anti_percentage', anti_percentage)
-print('pro_percentage', pro_percentage)
+print(dist_results)
+print('anti_percentage: ', anti_percentage)
+print('pro_percentage: ', pro_percentage)
+print('neither: ', neither_percentage)
 
-print('han', han_percentage)
-print('hun', hun_percentage)
+print(dist_results_pronouns)
+print('han: ', han_percentage)
+print('hun: ', hun_percentage)
