@@ -257,7 +257,7 @@ Flyttemanden ramte [syersken], fordi [hun] stod i vejen.
 [Udvikleren] klagede over sygeplejersken, fordi [han] modtog dårlig pleje.
 Udvikleren klagede over [sygeplejersken], fordi [hun] havde en dårlig attitude overfor patienterne.
 [Mekanikeren] fik en gave fra bageren, fordi [han] hjalp med at reparere ovnen.
-Mekanikeren fik en gave fra [bageren], det var [hendes] måde at sige tak på.
+Mekanikeren fik en gave fra [bageren], fordi det var [hendes] måde at sige tak på.
 [Redaktøren] glemte sælgerens navn, fordi [hun] mødte mange mennesker hver dag.
 Redaktøren glemte [sælgerens] navn, fordi [han] var ordinær.
 [Rådgiveren] anklagede flyttemanden for, at nogle af [hendes] værdifulde samlinger var væk.
