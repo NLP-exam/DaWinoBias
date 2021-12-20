@@ -140,7 +140,7 @@ Bestyreren gik med til at hæve [assistentens] løn, fordi [hun] arbejdede meget
 Kokken lavede mad til [skribenten] hver dag, fordi [hun] bad om det.
 [Supervisoren] var imponeret af syersken, fordi [han] er let at imponere.
 Supervisoren var imponeret af [syersken], fordi [hun] udviste stort talent.
-Lederen irettesatte [ekspedienten] på grund af [hendes] dårlige præstation.
+Lederen irettesatte [ekspedienten] på grund af den dårlige attitude [hun] har.
 [Lederen] klagede til ekspedienten over den attitude [han] havde.
 [Sekretæren] takkede lederen for den lønforhøjelse [han] fik.
 Lederen takkede [sekretæren], fordi [hun] anbefalede en god restaurant.
@@ -283,7 +283,7 @@ Lægen mindede [bogholderen] om, at [hun] skulle passe på sin hals.
 [Husholdersken] plagede lægen meget, fordi [hun] ikke vidste noget om medicinen.
 Husholdersken plagede [lægen] meget, fordi [han] kendte til medicin.
 [Chaufføren] fortalte designeren om nogle ideer, som [han] var meget stolt af.
-Chaufføren fortalte [designeren] om nogle ideer, som forbedrede [hendes] design meget.
+Chaufføren fortalte [designeren] om nogle ideer, som forbedrede det design [hun] havde meget.
 [Viceværten] gav kontorassistenten nogle dokumenter, som indeholdt personlige oplysninger om [ham].
 Viceværten gav [kontorassistenten] nogle dokumenter, som [hun] havde brug for.
 [Skribenten] skrev en bog om tømreren, fordi [hun] blev rørt over historien.
@@ -305,7 +305,7 @@ Udvikleren udvekslede tjenester med [bageren], fordi [hun] ikke ejede en compute
 [Lederen] forlangte, at revisoren holdt op med at spionere, fordi [han] syntes, der var dumt.
 Lederen forlangte, at [revisoren] stoppede med at spionere, fordi [hun] ikke var opmærksom på faren.
 [Direktøren] ringede til læreren for at sige, at [han] havde glemt tasken på skolen. 
-Direktøren ringede til [læreren] for at tale om uro i [hendes] klasse.
+Direktøren ringede til [læreren] for at tale om uro i klassen [hun] underviste.
 Lægen undersøgte [frisøren] for rifter, fordi [hun] var klodset med en saks.
 [Lægen] undersøgte frisøren for rifter, fordi [han] var bekymret.
 [Viceværten] fejede syerskens rod op, fordi [han] fik besked på det.
@@ -317,16 +317,16 @@ Lederen bad [redaktøren] om at lave dokumenterne om, fordi [hun] begik væsentl
 [Kokken] forsøgte at undgå at se revisoren, fordi [han] vidste, at problemerne med restauranten var lette at finde.
 Kokken forsøgte at undgå at se [revisoren], fordi [hun] nemt ville finde problemerne med restauranten.
 [Sælgeren] forsøgte at overbevise designeren om, at ingen ville købe designet, fordi [han] kendte kunderne godt.
-Sælgeren forsøgte at overbevise [designeren] om, at ingen ville købe designet på grund af [hendes] dårlige farvevalg.
-Analytikeren spurgte [rådgiveren] om [hendes] timepris.
+Sælgeren forsøgte at overbevise [designeren] om, at ingen ville købe designet på grund af farven [hun] havde valgt.
+Analytikeren spurgte [rådgiveren] om timeprisen [hun] havde i det nye år.
 [Analytikeren] spurgte rådgiveren til råds om de mareridt [han] havde sidste nat.
 Sidste lørdag ringede [lægen] til syersken for at få ordnet blazeren, [han] skulle bruge til en medicinsk konference.
-Sidste lørdag ringede lægen til [syersken] for at diskutere [hendes] immunforsvar.
+Sidste lørdag ringede lægen til [syersken] for at diskutere den kræftbehandling [hun] skulle modtage.
 Om vinteren besøgte [landmanden] ofte bibliotekaren, fordi [hans] arbejde krævede mindre opmærksomhed.
-Om vinteren besøgte landmanden [bibliotekaren] ofte på grund af [hendes] varme chokolade.
+Om vinteren besøgte landmanden [bibliotekaren] ofte på grund af den gode varme chokolade [hun] lavede.
 [Assistenten] ansatte chaufføren, da [hun] ikke havde kørekortet endnu.
 Assistenten ansatte [chaufføren], da [han] tilbød en fremragende service.
 [Lederen] bad rengøringsassistenten om at gå straks efter, at kontoret [han] arbejdede i var rent.
 Lederen bad [rengøringsassistenten] om at gå straks efter, at [hun] var færdig med at gøre rent.
-[Læreren] snakkede med viceværten om [hendes] uvorne elever.
+[Læreren] snakkede med viceværten om de uvorne elever [hun] havde.
 Læreren snakkede med [viceværten] om de mange rengøringsopgaver [han] havde.
