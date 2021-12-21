@@ -2,6 +2,8 @@ import sys, os, spacy, random, torch
 from pathlib import Path
 import numpy as np
 from danlp.models import load_xlmr_coref_model
+import nltk
+nltk.download('omw-1.4')
 
 from utility_functions.remove_suffix import remove_suffix
 from utility_functions.remove_square_brackets import remove_sq_br

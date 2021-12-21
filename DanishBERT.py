@@ -49,3 +49,6 @@ print('pro_count_pronouns', pro_count_pronouns)
 #evaluate performance
 evaluate_model(anti_labels, anti_preds, filename = 'results/danishbert_anti_results_mlm')
 evaluate_model(pro_labels, pro_preds, filename = 'results/danishbert_pro_results_mlm')
+
+print(evaluate_model(anti_labels, anti_preds, filename = 'results/danishbert_anti_results_mlm'))
+print(evaluate_model(pro_labels, pro_preds, filename = 'results/danishbert_pro_results_mlm'))
