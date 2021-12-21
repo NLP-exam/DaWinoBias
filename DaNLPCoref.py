@@ -120,4 +120,4 @@ for condition in ['anti_stereotypical', 'pro_stereotypical']:
 
     #print results
     print(evaluate_model(labels_occ, preds_occ, filename = f'results/danlp_coref_{condition}_occupations'))
-    print(evaluate_model(labels_stereotype, preds_stereotype, filename = f'results/danlp_coref_{seed}_{condition}_stereotypes'))
+    print(evaluate_model(labels_stereotype, preds_stereotype, filename = f'results/danlp_coref_{condition}_stereotypes'))
