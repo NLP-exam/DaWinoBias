@@ -1,4 +1,4 @@
-# Detecting-Bias-in--LMs
+# DaWinoBias-Detecting-Assessing-Occupational-Gender-Stereotypes-in-Danish-NLP-Models
 
 # To run this code
 * pip install -r requirements.txt
