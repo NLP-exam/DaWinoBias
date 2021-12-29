@@ -1,4 +1,4 @@
-# DaWinoBias-Detecting-Assessing-Occupational-Gender-Stereotypes-in-Danish-NLP-Models
+# DaWinoBias: Assessing Occupational Gender Stereotypes in Danish NLP Models
 
 # To run this code
 * pip install -r requirements.txt
